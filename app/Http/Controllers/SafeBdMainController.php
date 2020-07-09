@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class SafeBdMainController extends Controller
 {
     public function index() {
-        return 5;
+        return 50;
     }
 }
