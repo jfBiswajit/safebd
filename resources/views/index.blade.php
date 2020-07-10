@@ -31,13 +31,13 @@
 		</div>
 	</header>
 </div>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-md navbar-light bg-light">
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
 		aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
 	<div class="collapse navbar-collapse" id="navbarNavDropdown">
-		<ul class="navbar-nav text-center">
+		<ul class="navbar-nav w-70 mx-auto">
 			<li class="nav-item">
 				<a class="nav-link" href="#">Safety</a>
 			</li>
