@@ -23,6 +23,33 @@ body {
 	font-weight: 400;
 }
 
-.log-reg span a{
+.log-reg span a {
 	color: black;
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+	header {
+		text-align: center;
+		width: 400px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 576px) {
+	header {
+		text-align: center;
+	}
+
+	header .btn {
+		width: 100%;
+	}
+
+	#search-box {
+		margin-right: 0 !important;
+	}
+
+	#user-panel-top {
+		width: 400px;
+		margin: 0 auto;
+	}
 }

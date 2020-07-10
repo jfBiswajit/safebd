@@ -2,19 +2,19 @@
 <div class="container">
 	<header class="p-4">
 		<div class="row">
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-12">
 				<div class="logo">
 					<h1 class="font-Galada text-success">SafeBD.Net</h1>
 				</div>
 			</div>
-			<div class="col-lg-5">
+			<div class="col-lg-5 col-md-12">
 				<form class="form-inline">
-					<input type="text" name="" id="" class="form-control mr-2" placeholder="What are you looking for?">
-					<button type="submit" class="btn btn-success">Search</button>
+					<input type="text" name="" id="search-box" class="form-control mr-2" placeholder="What are you looking for?">
+					<button type="submit" class="btn btn-success sm-block">Search</button>
 				</form>
 			</div>
-			<div class="col-lg-4">
-				<div class="d-flex">
+			<div class="col-lg-4 col-md-12">
+				<div class="d-flex" id="user-panel-top">
 					<ion-icon name="call-outline" size="large" class="mr-2"></ion-icon>
 					<span class="log-reg">
 						<span><b>Hotline</b></span>
