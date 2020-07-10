@@ -78,3 +78,9 @@ nav ul li a:hover {
 		margin: 0 auto;
 	}
 }
+
+@media (min-width: 992px) {
+	.card {
+		margin-bottom: 1rem !important;
+	}
+}
