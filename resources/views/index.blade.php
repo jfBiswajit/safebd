@@ -31,4 +31,38 @@
 		</div>
 	</header>
 </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+		aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNavDropdown">
+		<ul class="navbar-nav text-center">
+			<li class="nav-item">
+				<a class="nav-link" href="#">Safety</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Fire</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Lab</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Electronics</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Mechanical</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Cevil</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Textile</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Islamic</a>
+			</li>
+		</ul>
+	</div>
+</nav>
 @extends('layouts.footer')
