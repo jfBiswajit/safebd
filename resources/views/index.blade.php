@@ -1,4 +1,4 @@
-@extends('layouts.header')
+@include('layouts.header')
 <div class="container">
 	<header class="p-4">
 		<div class="row">
@@ -105,11 +105,12 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="card-deck">
 					<div class="card">
-						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg" alt="Card image cap">
+						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg"
+							alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title font-weight-light">Product Title</h5>
 							<h5 class="float-right text-danger"><b>৳ 50</b></h5>
-							<a href="#" class="btn btn-primary">Add To Cart</a>
+							<a href="#" class="btn btn-success">Add To Cart</a>
 						</div>
 					</div>
 				</div>
@@ -117,11 +118,12 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="card-deck">
 					<div class="card">
-						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg" alt="Card image cap">
+						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg"
+							alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title font-weight-light">Product Title</h5>
 							<h5 class="float-right text-danger"><b>৳ 50</b></h5>
-							<a href="#" class="btn btn-primary">Add To Cart</a>
+							<a href="#" class="btn btn-success">Add To Cart</a>
 						</div>
 					</div>
 				</div>
@@ -129,11 +131,12 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="card-deck">
 					<div class="card">
-						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg" alt="Card image cap">
+						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg"
+							alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title font-weight-light">Product Title</h5>
 							<h5 class="float-right text-danger"><b>৳ 50</b></h5>
-							<a href="#" class="btn btn-primary">Add To Cart</a>
+							<a href="#" class="btn btn-success">Add To Cart</a>
 						</div>
 					</div>
 				</div>
@@ -141,11 +144,12 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="card-deck">
 					<div class="card">
-						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg" alt="Card image cap">
+						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg"
+							alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title font-weight-light">Product Title</h5>
 							<h5 class="float-right text-danger"><b>৳ 50</b></h5>
-							<a href="#" class="btn btn-primary">Add To Cart</a>
+							<a href="#" class="btn btn-success">Add To Cart</a>
 						</div>
 					</div>
 				</div>
@@ -153,11 +157,12 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="card-deck">
 					<div class="card">
-						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg" alt="Card image cap">
+						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg"
+							alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title font-weight-light">Product Title</h5>
 							<h5 class="float-right text-danger"><b>৳ 50</b></h5>
-							<a href="#" class="btn btn-primary">Add To Cart</a>
+							<a href="#" class="btn btn-success">Add To Cart</a>
 						</div>
 					</div>
 				</div>
@@ -165,11 +170,12 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="card-deck">
 					<div class="card">
-						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg" alt="Card image cap">
+						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg"
+							alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title font-weight-light">Product Title</h5>
 							<h5 class="float-right text-danger"><b>৳ 50</b></h5>
-							<a href="#" class="btn btn-primary">Add To Cart</a>
+							<a href="#" class="btn btn-success">Add To Cart</a>
 						</div>
 					</div>
 				</div>
@@ -177,11 +183,12 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="card-deck">
 					<div class="card">
-						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg" alt="Card image cap">
+						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg"
+							alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title font-weight-light">Product Title</h5>
 							<h5 class="float-right text-danger"><b>৳ 50</b></h5>
-							<a href="#" class="btn btn-primary">Add To Cart</a>
+							<a href="#" class="btn btn-success">Add To Cart</a>
 						</div>
 					</div>
 				</div>
@@ -189,11 +196,12 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="card-deck">
 					<div class="card">
-						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg" alt="Card image cap">
+						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg"
+							alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title font-weight-light">Product Title</h5>
 							<h5 class="float-right text-danger"><b>৳ 50</b></h5>
-							<a href="#" class="btn btn-primary">Add To Cart</a>
+							<a href="#" class="btn btn-success">Add To Cart</a>
 						</div>
 					</div>
 				</div>
@@ -218,11 +226,12 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="card-deck">
 					<div class="card">
-						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg" alt="Card image cap">
+						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg"
+							alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title font-weight-light">Product Title</h5>
 							<h5 class="float-right text-danger"><b>৳ 50</b></h5>
-							<a href="#" class="btn btn-primary">Add To Cart</a>
+							<a href="#" class="btn btn-success">Add To Cart</a>
 						</div>
 					</div>
 				</div>
@@ -230,11 +239,12 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="card-deck">
 					<div class="card">
-						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg" alt="Card image cap">
+						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg"
+							alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title font-weight-light">Product Title</h5>
 							<h5 class="float-right text-danger"><b>৳ 50</b></h5>
-							<a href="#" class="btn btn-primary">Add To Cart</a>
+							<a href="#" class="btn btn-success">Add To Cart</a>
 						</div>
 					</div>
 				</div>
@@ -242,11 +252,12 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="card-deck">
 					<div class="card">
-						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg" alt="Card image cap">
+						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg"
+							alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title font-weight-light">Product Title</h5>
 							<h5 class="float-right text-danger"><b>৳ 50</b></h5>
-							<a href="#" class="btn btn-primary">Add To Cart</a>
+							<a href="#" class="btn btn-success">Add To Cart</a>
 						</div>
 					</div>
 				</div>
@@ -254,11 +265,12 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="card-deck">
 					<div class="card">
-						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg" alt="Card image cap">
+						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg"
+							alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title font-weight-light">Product Title</h5>
 							<h5 class="float-right text-danger"><b>৳ 50</b></h5>
-							<a href="#" class="btn btn-primary">Add To Cart</a>
+							<a href="#" class="btn btn-success">Add To Cart</a>
 						</div>
 					</div>
 				</div>
@@ -283,11 +295,12 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="card-deck">
 					<div class="card">
-						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg" alt="Card image cap">
+						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg"
+							alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title font-weight-light">Product Title</h5>
 							<h5 class="float-right text-danger"><b>৳ 50</b></h5>
-							<a href="#" class="btn btn-primary">Add To Cart</a>
+							<a href="#" class="btn btn-success">Add To Cart</a>
 						</div>
 					</div>
 				</div>
@@ -295,11 +308,12 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="card-deck">
 					<div class="card">
-						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg" alt="Card image cap">
+						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg"
+							alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title font-weight-light">Product Title</h5>
 							<h5 class="float-right text-danger"><b>৳ 50</b></h5>
-							<a href="#" class="btn btn-primary">Add To Cart</a>
+							<a href="#" class="btn btn-success">Add To Cart</a>
 						</div>
 					</div>
 				</div>
@@ -307,11 +321,12 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="card-deck">
 					<div class="card">
-						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg" alt="Card image cap">
+						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg"
+							alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title font-weight-light">Product Title</h5>
 							<h5 class="float-right text-danger"><b>৳ 50</b></h5>
-							<a href="#" class="btn btn-primary">Add To Cart</a>
+							<a href="#" class="btn btn-success">Add To Cart</a>
 						</div>
 					</div>
 				</div>
@@ -319,11 +334,12 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="card-deck">
 					<div class="card">
-						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg" alt="Card image cap">
+						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg"
+							alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title font-weight-light">Product Title</h5>
 							<h5 class="float-right text-danger"><b>৳ 50</b></h5>
-							<a href="#" class="btn btn-primary">Add To Cart</a>
+							<a href="#" class="btn btn-success">Add To Cart</a>
 						</div>
 					</div>
 				</div>
@@ -348,11 +364,12 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="card-deck">
 					<div class="card">
-						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg" alt="Card image cap">
+						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg"
+							alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title font-weight-light">Product Title</h5>
 							<h5 class="float-right text-danger"><b>৳ 50</b></h5>
-							<a href="#" class="btn btn-primary">Add To Cart</a>
+							<a href="#" class="btn btn-success">Add To Cart</a>
 						</div>
 					</div>
 				</div>
@@ -360,11 +377,12 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="card-deck">
 					<div class="card">
-						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg" alt="Card image cap">
+						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg"
+							alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title font-weight-light">Product Title</h5>
 							<h5 class="float-right text-danger"><b>৳ 50</b></h5>
-							<a href="#" class="btn btn-primary">Add To Cart</a>
+							<a href="#" class="btn btn-success">Add To Cart</a>
 						</div>
 					</div>
 				</div>
@@ -372,11 +390,12 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="card-deck">
 					<div class="card">
-						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg" alt="Card image cap">
+						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg"
+							alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title font-weight-light">Product Title</h5>
 							<h5 class="float-right text-danger"><b>৳ 50</b></h5>
-							<a href="#" class="btn btn-primary">Add To Cart</a>
+							<a href="#" class="btn btn-success">Add To Cart</a>
 						</div>
 					</div>
 				</div>
@@ -384,11 +403,12 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<div class="card-deck">
 					<div class="card">
-						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg" alt="Card image cap">
+						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg"
+							alt="Card image cap">
 						<div class="card-body">
 							<h5 class="card-title font-weight-light">Product Title</h5>
 							<h5 class="float-right text-danger"><b>৳ 50</b></h5>
-							<a href="#" class="btn btn-primary">Add To Cart</a>
+							<a href="#" class="btn btn-success">Add To Cart</a>
 						</div>
 					</div>
 				</div>
@@ -396,5 +416,33 @@
 		</div>
 	</div>
 </section>
+<footer class="text-light bg-dark">
+	<div class="row p-5">
+		<div class="col">
+			<h2 class="font-weight-light">SafeBD</h2>
+			<p class="font-weight-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident molestias dolores exercitationem fugiat,
+				corrupti eaque dolorem et minus distinctio ut at nulla saepe, ad atque. Quos eius consectetur quod suscipit ea
+				nobis laudantium natus, dolorum rem labore ullam amet debitis, temporibus omnis! Quibusdam fugit vero, velit
+			</p>
+		</div>
+		<div class="col">
+			<h5>USEFULL LINKS</h5>
+			<ul class="list-group">
+				<li class="list-group-item bg-dark"><a href="" class="text-light">Home</a></li>
+				<li class="list-group-item bg-dark"><a href="" class="text-light">About Us</a></li>
+				<li class="list-group-item bg-dark"><a href="" class="text-light">Services</a></li>
+				<li class="list-group-item bg-dark"><a href="" class="text-light">Terms Of Service</a></li>
+			</ul>
+		</div>
+		<div class="col">
+			<h5>Contact Us</h5>
+			<ul class="list-group">
+				<li class="list-group-item bg-dark"><b>Email:</b> jfBiswajit@gmail.com</li>
+				<li class="list-group-item bg-dark"><b>Phone:</b> +88 01842181614</li>
+			</ul>
+		</div>
+	</div>
+	<div class="p-2 text-center text-light">All Rights Reserved @Biswajit Biswas</div>
+</footer>
 
-@extends('layouts.footer')
+@include('layouts.footer')

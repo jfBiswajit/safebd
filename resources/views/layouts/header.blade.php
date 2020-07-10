@@ -14,6 +14,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Galada&family=Noto+Sans+JP:wght@300;400;500&display=swap"
 		rel="stylesheet">
 
+	{{-- Favicon --}}
+	<link rel="shortcut icon" href="{{ asset('icon/favicon.png') }}" />
+
 	{{-- Custom CSS Style --}}
 	<link rel="stylesheet" href="{{ asset('css/main.css') }}">
 
