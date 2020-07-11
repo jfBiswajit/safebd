@@ -416,33 +416,40 @@
 		</div>
 	</div>
 </section>
-<footer class="text-light bg-dark">
-	<div class="row p-5">
-		<div class="col">
-			<h2 class="font-weight-light">SafeBD</h2>
-			<p class="font-weight-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident molestias dolores exercitationem fugiat,
-				corrupti eaque dolorem et minus distinctio ut at nulla saepe, ad atque. Quos eius consectetur quod suscipit ea
-				nobis laudantium natus, dolorum rem labore ullam amet debitis, temporibus omnis! Quibusdam fugit vero, velit
-			</p>
-		</div>
-		<div class="col">
-			<h5>USEFULL LINKS</h5>
-			<ul class="list-group">
-				<li class="list-group-item bg-dark"><a href="" class="text-light">Home</a></li>
-				<li class="list-group-item bg-dark"><a href="" class="text-light">About Us</a></li>
-				<li class="list-group-item bg-dark"><a href="" class="text-light">Services</a></li>
-				<li class="list-group-item bg-dark"><a href="" class="text-light">Terms Of Service</a></li>
-			</ul>
-		</div>
-		<div class="col">
-			<h5>Contact Us</h5>
-			<ul class="list-group">
-				<li class="list-group-item bg-dark"><b>Email:</b> jfBiswajit@gmail.com</li>
-				<li class="list-group-item bg-dark"><b>Phone:</b> +88 01842181614</li>
-			</ul>
+<footer class="bg-light pt-4">
+	<div class="container p-4">
+		<div class="row">
+			<div class="col-md-4">
+				<h4 class="">SafeBD.Net</h4>
+				<p class="text-muted">Lorem ipsum dolor sit consectetur adipisicing elit. Cupiditate perspiciatis assumenda explicabo aut? Ut reprehenderit, sequi tempora quae voluptates magnam nobis animi praesentium fugit consequatur est</p>
+			</div>
+			<div class="col-md-4">
+				<h6>Site Link</h6>
+				<ul class="list-group" style="list-style-type: none">
+					<li><a href="">Safety</a></li>
+					<li><a href="">Fire</a></li>
+					<li><a href="">LAB</a></li>
+					<li><a href="">Mechanical</a></li>
+					<li><a href="">Electronics</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4">
+				<h6>Contact</h6>
+				<p>
+					<ion-icon name="call"></ion-icon>
+					<span class="ml-1">+88 01842181614</span>
+				</p>
+				<p>
+					<ion-icon name="mail"></ion-icon>
+					<span class="ml-1">jfbiswajit@gmail.com</span>
+				</p>
+			</div>
 		</div>
 	</div>
-	<div class="p-2 text-center text-light">All Rights Reserved @Biswajit Biswas</div>
+	<div class="text-center border-top p-2">
+		<ion-icon name="logo-facebook" size="large" class="p-2 text-primary"></ion-icon>
+		<ion-icon name="logo-twitter" size="large" class="p-2 text-primary"></ion-icon>
+		<ion-icon name="logo-youtube" size="large" class="p-2 text-danger"></ion-icon>
+	</div>
 </footer>
-
 @include('layouts.footer')
