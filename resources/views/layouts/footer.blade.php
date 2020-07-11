@@ -9,7 +9,7 @@
   			</div>
   			<div class="col-md-4">
   				<h6>Site Link</h6>
-  				<ul class="list-group" style="list-style-type: none">
+  				<ul class="list-group font-weight-light" style="list-style-type: none">
   					<li><a href="">Safety</a></li>
   					<li><a href="">Fire</a></li>
   					<li><a href="">LAB</a></li>
@@ -17,7 +17,7 @@
   					<li><a href="">Electronics</a></li>
   				</ul>
   			</div>
-  			<div class="col-md-4">
+  			<div class="col-md-4 font-weight-light">
   				<h6>Contact</h6>
   				<p>
   					<ion-icon name="call"></ion-icon>
