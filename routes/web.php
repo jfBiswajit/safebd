@@ -9,3 +9,4 @@ Route::get('/checkout', 'SafeBdMainController@Checkout');
 Route::get('/thank_you', 'SafeBdMainController@Thankyou');
 
 Route::get('/dashboard', 'SafeBdMainController@Dashboard');
+Route::get('/login', 'SafeBdMainController@Login');
