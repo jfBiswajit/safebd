@@ -30,4 +30,10 @@ class SafeBdMainController extends Controller
 			'title' => 'Checkout'
 		]);
 	}
+
+	public function Thankyou() {
+		return view('thank_you', [
+			'title' => 'Checkout'
+		]);
+	}
 }
