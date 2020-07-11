@@ -2,7 +2,7 @@
   <div class="container p-5">
     <div class="row">
     	<div class="col-md-5">
-        <img class="p-2 m-2 bg-light" src="https://az31823.vo.msecnd.net/content/en-us/img/catalog/products/140325_multi_complex_sku3115_400.jpg"
+        <img class="p-2 m-2 bg-light border rounded" src="https://az31823.vo.msecnd.net/content/en-us/img/catalog/products/140325_multi_complex_sku3115_400.jpg"
         	alt="">
       </div>
     	<div class="col-md-7">

@@ -3,7 +3,7 @@
   		<div class="row">
   			<div class="col-md-4">
   				<h4 class="">SafeBD.Net</h4>
-  				<p class="text-muted">Lorem ipsum dolor sit consectetur adipisicing elit. Cupiditate perspiciatis assumenda
+  				<p class="text-muted font-weight-light">Lorem ipsum dolor sit consectetur adipisicing elit. Cupiditate perspiciatis assumenda
   					explicabo aut? Ut reprehenderit, sequi tempora quae voluptates magnam nobis animi praesentium fugit
   					consequatur est</p>
   			</div>

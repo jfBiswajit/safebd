@@ -18,4 +18,10 @@ class SafeBdMainController extends Controller
 			'title' => 'Product View'
 		]);
 	}
+
+	public function Cart() {
+		return view('cart', [
+			'title' => 'Cart'
+		]);
+	}
 }
