@@ -49,7 +49,10 @@
 							<span><b>Hotline</b></span>
 							<span>+88 01842181614</span>
 						</span>
-						<ion-icon name="cart-outline" size="large" class="ml-4"></ion-icon>
+						<span style="position: relative">
+							<ion-icon name="cart-outline" size="large" class="ml-4"></ion-icon>
+							<span class="cart_item_show">1</span>
+						</span>
 						<ion-icon name="person-outline" size="large" class="mr-2 ml-4"></ion-icon>
 						<span class="log-reg">
 							<span><a href=""><b>Log In</b></a></span>
