@@ -36,4 +36,10 @@ class SafeBdMainController extends Controller
 			'title' => 'Checkout'
 		]);
 	}
+
+	public function Dashboard() {
+		return view('admin.dashboard', [
+			'title' => 'Checkout'
+		]);
+	}
 }
