@@ -49,7 +49,7 @@
 			<nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
 				<div class="sb-sidenav-menu">
 					<div class="nav">
-						<a class="nav-link active" href="index.html">
+						<a class="nav-link active" href="{{ url('dashboard') }}">
 							<div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
 							Dashboard
 						</a>
@@ -67,8 +67,8 @@
 						</a>
 						<div class="collapse" id="orders" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
 							<nav class="sb-sidenav-menu-nested nav">
-								<a class="nav-link" href="layout-static.html">Pending</a>
-								<a class="nav-link" href="layout-sidenav-light.html">Completed</a>
+								<a class="nav-link" href="{{ url('pending_orders') }}">Pending</a>
+								<a class="nav-link" href="{{ url('completed_orders') }}">Completed</a>
 							</nav>
 						</div>
 
@@ -80,7 +80,7 @@
 						</a>
 						<div class="collapse" id="products" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
 							<nav class="sb-sidenav-menu-nested nav">
-								<a class="nav-link" href="layout-static.html">Add New</a>
+								<a class="nav-link" href="{{ url('add_new_product') }}">Add New</a>
 								<a class="nav-link" href="layout-sidenav-light.html">Update</a>
 								<a class="nav-link" href="layout-sidenav-light.html">Delete</a>
 							</nav>
