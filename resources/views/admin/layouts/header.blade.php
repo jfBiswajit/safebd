@@ -54,9 +54,14 @@
 							Dashboard
 						</a>
 
+						<a class="nav-link" href="index.html">
+							<div class="sb-nav-link-icon"><i class="fas fa-cubes"></i></div>
+							Stocks
+						</a>
+
 						<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#orders"
 							aria-expanded="false" aria-controls="orders">
-							<div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+							<div class="sb-nav-link-icon"><i class="fas fa-th-list"></i></div>
 							Orders
 							<div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
 						</a>

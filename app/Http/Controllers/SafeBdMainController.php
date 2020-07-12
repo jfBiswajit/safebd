@@ -48,4 +48,9 @@ class SafeBdMainController extends Controller
 			'title' => 'Checkout'
 		]);
 	}
+	public function PendingOrder() {
+		return view('admin.pending_orders', [
+			'title' => 'Pending Orders'
+		]);
+	}
 }
