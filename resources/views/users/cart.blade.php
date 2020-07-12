@@ -1,4 +1,4 @@
-@include('layouts.header')
+@include('users.layouts.header')
 <div class="container">
   <div class="p-4 border rounded m-4">
     <h4 class="pb-4 mb-3 text-success border-bottom">
@@ -52,4 +52,4 @@
     </div>
   </div>
 </div>
-@include('layouts.footer')
+@include('users.layouts.footer')
