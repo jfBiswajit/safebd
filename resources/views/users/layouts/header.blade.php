@@ -31,34 +31,37 @@
 	<div class="sticky-top bg-white">
 		<header class="container px-4 pt-4">
 			<div class="row">
-				<div class="col-lg-3 col-md-12">
+				<div class="col-xl-3">
 					<div class="logo">
 						<h1 class="font-Galada text-success">SafeBD.Net</h1>
 					</div>
 				</div>
-				<div class="col-lg-5 col-md-12">
+				<div class="col-xl-5">
 					<form class="form-inline">
-						<input type="text" name="" id="search-box" class="font-weight-light form-control mr-2" placeholder="What are you looking for?" size="28">
-						<button type="submit" class="btn btn-success sm-block">Search</button>
+						<div id="top_search">
+							<input type="text" name="" id="search-box" class="font-weight-light form-control mr-2"
+								placeholder="What are you looking for?" size="28">
+							<button type="submit" class="btn btn-success sm-block">Search</button>
+						</div>
 					</form>
 				</div>
-				<div class="col-lg-4 col-md-12">
-					<div class="d-flex" id="user-panel-top">
-						<ion-icon name="call-outline" size="large" class="mr-2"></ion-icon>
-						<span class="log-reg">
-							<span><b>Hotline</b></span>
-							<span>+88 01842181614</span>
-						</span>
-						<span style="position: relative">
-							<ion-icon name="cart-outline" size="large" class="ml-4"></ion-icon>
-							<span class="cart_item_show">1</span>
-						</span>
-						<ion-icon name="person-outline" size="large" class="mr-2 ml-4"></ion-icon>
-						<span class="log-reg">
-							<span><a href=""><b>Log In</b></a></span>
-							<span><a href=""><b>Register</b></a></span>
-						</span>
-					</div>
+				<div class="col-xl-4">
+						<div class="d-flex" id="user_panel_top">
+							<ion-icon name="call-outline" style="font-size: 1.8rem" class="mr-2"></ion-icon>
+							<span class="log-reg">
+								<span><b>Hotline</b></span>
+								<span>+88 01842181614</span>
+							</span>
+							<span style="position: relative">
+								<ion-icon name="cart-outline" style="font-size: 1.8rem" class="ml-4"></ion-icon>
+								<span class="cart_item_show">1</span>
+							</span>
+							<ion-icon name="person-outline" style="font-size: 1.8rem" class="mr-2 ml-4"></ion-icon>
+							<span class="log-reg">
+								<span><a href=""><b>Log In</b></a></span>
+								<span><a href=""><b>Register</b></a></span>
+							</span>
+						</div>
 				</div>
 			</div>
 		</header>
