@@ -1,13 +1,12 @@
 @include('users.layouts.header')
-  <div class="container">
-    <div class="row p-5">
-    	<div class="p-2">
-				<div class="col-sm-12 col-md-3">
+  <div class="container p-5">
+    <div class="row">
+				<div class="col-lg-4">
 					<img class="p-2 m-2 bg-light border rounded img-fluid"
 						src="https://az31823.vo.msecnd.net/content/en-us/img/catalog/products/140325_multi_complex_sku3115_400.jpg"
 						alt="">
 				</div>
-				<div class="col-sm-12 col-md-7">
+				<div class="col-lg-8">
 					<div class="product_details ml-4">
 						<div class="title mb-3">
 							<h3 class="p-1">Original Product Name</h3>
@@ -28,7 +27,6 @@
 						<a class="btn btn-success mb-2" href="">Add To Cart</a>
 					</div>
 				</div>
-			</div>
     </div>
   </div>
   <section id="new_arrival">
