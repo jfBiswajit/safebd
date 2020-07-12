@@ -8,31 +8,31 @@ class SafeBdMainController extends Controller
 {
 	public function index()
 	{
-		return view('index', [
+		return view('users.index', [
 			'title' => 'Online Shopping For Health Care in Bangladesh'
 		]);
 	}
 
 	public function ProductDetails() {
-		return view('product_details', [
+		return view('users.product_details', [
 			'title' => 'Product View'
 		]);
 	}
 
 	public function Cart() {
-		return view('cart', [
+		return view('users.cart', [
 			'title' => 'Cart'
 		]);
 	}
 
 	public function Checkout() {
-		return view('checkout', [
+		return view('users.checkout', [
 			'title' => 'Checkout'
 		]);
 	}
 
 	public function Thankyou() {
-		return view('thank_you', [
+		return view('users.thank_you', [
 			'title' => 'Checkout'
 		]);
 	}
@@ -48,9 +48,22 @@ class SafeBdMainController extends Controller
 			'title' => 'Checkout'
 		]);
 	}
+
 	public function PendingOrder() {
 		return view('admin.pending_orders', [
 			'title' => 'Pending Orders'
+		]);
+	}
+
+	public function CompletedOrder() {
+		return view('admin.completed_orders', [
+			'title' => 'Completed Orders'
+		]);
+	}
+
+	public function AddNewProduct() {
+		return view('admin.add_new_product', [
+			'title' => 'Completed Orders'
 		]);
 	}
 }
