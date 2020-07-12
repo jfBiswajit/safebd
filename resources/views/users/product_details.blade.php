@@ -1,27 +1,34 @@
-@include('layouts.header')
-  <div class="container p-5">
-    <div class="row">
-    	<div class="col-md-5">
-        <img class="p-2 m-2 bg-light border rounded" src="https://az31823.vo.msecnd.net/content/en-us/img/catalog/products/140325_multi_complex_sku3115_400.jpg"
-        	alt="">
-      </div>
-    	<div class="col-md-7">
-        <div class="product_details ml-4">
-          <div class="title mb-3">
-            <h3 class="p-1">Original Product Name</h3>
-            <h3 class="text-danger p-1">৳ 50</h3>
-          </div>
-          <div class="description p-1">
-            <h6>Description</h6>
-            <p class="text-muted font-weight-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa illum perspiciatis ratione eos nam eveniet deleniti, harum et consequatur nisi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, ducimus fugiat doloribus soluta iure in quaerat ipsum error minus quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odit fugit aut incidunt, quas at neque doloribus reiciendis fugiat obcaecati.</p>
-          </div>
-          <div class="delivery p-1">
-            <h6>Delivery</h6>
-            <p class="text-muted font-weight-light">All Over Bangladesh</p>
-          </div>
-          <a class="btn btn-success" href="">Add To Cart</a>
-        </div>
-      </div>
+@include('users.layouts.header')
+  <div class="container">
+    <div class="row p-5">
+    	<div class="p-2">
+				<div class="col-sm-12 col-md-3">
+					<img class="p-2 m-2 bg-light border rounded img-fluid"
+						src="https://az31823.vo.msecnd.net/content/en-us/img/catalog/products/140325_multi_complex_sku3115_400.jpg"
+						alt="">
+				</div>
+				<div class="col-sm-12 col-md-7">
+					<div class="product_details ml-4">
+						<div class="title mb-3">
+							<h3 class="p-1">Original Product Name</h3>
+							<h3 class="text-danger p-1">৳ 50</h3>
+						</div>
+						<div class="description p-1">
+							<h6>Description</h6>
+							<p class="text-muted font-weight-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa illum
+								perspiciatis ratione eos nam eveniet deleniti, harum et consequatur nisi! Lorem ipsum dolor sit, amet
+								consectetur adipisicing elit. Omnis, ducimus fugiat doloribus soluta iure in quaerat ipsum error minus quis.
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odit fugit aut incidunt, quas at neque
+								doloribus reiciendis fugiat obcaecati.</p>
+						</div>
+						<div class="delivery p-1">
+							<h6>Delivery</h6>
+							<p class="text-muted font-weight-light">All Over Bangladesh</p>
+						</div>
+						<a class="btn btn-success mb-2" href="">Add To Cart</a>
+					</div>
+				</div>
+			</div>
     </div>
   </div>
   <section id="new_arrival">
@@ -93,4 +100,4 @@
   		</div>
   	</div>
   </section>
-@include('layouts.footer')
+@include('users.layouts.footer')
