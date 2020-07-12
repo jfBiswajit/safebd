@@ -1,6 +1,6 @@
 @include('admin.layouts.header')
   <div class="container-fluid">
-  	<h1 class="py-4 pr-4">Pending Orders</h1>
+  	<h1 class="py-4 pr-4 text-warning">Pending Orders</h1>
   	<div class="card mb-4">
   		<div class="card-header">
   			<i class="fas fa-table mr-1"></i>
