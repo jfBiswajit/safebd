@@ -1,4 +1,4 @@
-@include('layouts.header')
+@include('users.layouts.header')
   <div class="container p-5">
     <div class="alert alert-success" role="alert">
     	<h4 class="alert-heading">Thank You!</h4>
@@ -17,4 +17,4 @@
         </div>
     </div>
   </div>
-@include('layouts.footer')
+@include('users.layouts.footer')
