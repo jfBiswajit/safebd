@@ -82,7 +82,7 @@
 				<ul class="navbar-nav w-70 mx-auto">
 					@foreach ($common_data['categories'] as $item)
 						<li class="nav-item">
-							<a class="nav-link" href="#">{{ $item }}</a>
+							<a class="nav-link" href="{{ $item }}">{{ $item }}</a>
 						</li>
 					@endforeach
 				</ul>

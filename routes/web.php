@@ -15,3 +15,13 @@ Route::get('/completed_orders', 'SafeBdMainController@CompletedOrder');
 Route::get('/add_new_product', 'SafeBdMainController@AddNewProduct');
 
 Route::post('/add_to_cart', 'SafeBdMainController@AddToCart');
+
+
+Route::get('/safety', 'SafeBdMainController@Safety');
+Route::get('/fire', 'SafeBdMainController@Fire');
+Route::get('/lab', 'SafeBdMainController@Lab');
+Route::get('/electronics', 'SafeBdMainController@Electronics');
+Route::get('/mechanical', 'SafeBdMainController@Mechanical');
+Route::get('/cevil', 'SafeBdMainController@Cevil');
+Route::get('/textile', 'SafeBdMainController@Textile');
+Route::get('/islamic', 'SafeBdMainController@Islamic');

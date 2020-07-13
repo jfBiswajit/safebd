@@ -138,4 +138,52 @@ class SafeBdMainController extends Controller
 
 		return response()->json(['TotalItems' => $TotalItems], 200);
 	}
+
+	public function Safety() {
+		return view('users.categories', [
+			'title' => 'how'
+		]);
+	}
+
+	public function Fire() {
+		return view('users.categories', [
+			'title' => 'how'
+		]);
+	}
+
+	public function Lab() {
+		return view('users.categories', [
+			'title' => 'how'
+		]);
+	}
+
+	public function Electronics() {
+		return view('users.categories', [
+			'title' => 'how'
+		]);
+	}
+
+	public function Mechanical() {
+		return view('users.categories', [
+			'title' => 'how'
+		]);
+	}
+
+	public function Cevil() {
+		return view('users.categories', [
+			'title' => 'how'
+		]);
+	}
+
+	public function Textile() {
+		return view('users.categories', [
+			'title' => 'how'
+		]);
+	}
+
+	public function Islamic() {
+		return view('users.categories', [
+			'title' => 'how'
+		]);
+	}
 }
