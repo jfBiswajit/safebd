@@ -12,8 +12,6 @@ class SafeBdMainController extends Controller
 	public function __construct()
 	{
 		$CartData = Session::get('cart');
-		// $CartData = Session::all();
-		// dd($CartData);
 
 		if ($CartData) {
 			$CartItems = Session::get('cart');
@@ -26,15 +24,8 @@ class SafeBdMainController extends Controller
 
 	public function index(Request $Req)
 	{
-		// if ($Req->session()->get('cart')) {
-		// 	$CartItems = $Req->session()->get('cart');
-		// } else {
-		// 	$CartItems = [];
-		// }
-
 		return view('users.index', [
 			'title' => 'Online Shopping For Health Care in Bangladesh',
-			// 'cart_items' => count($CartItems)
 		]);
 	}
 
@@ -45,8 +36,21 @@ class SafeBdMainController extends Controller
 	}
 
 	public function Cart() {
+		if(Session::get('cart')) {
+			$CartData = Session::get('cart');
+		} else {
+			$CartData = [];
+		}
+
+		$total = 0;
+		foreach($CartData as $item) {
+			$total += (int) $item['price'];
+		}
+
 		return view('users.cart', [
-			'title' => 'Cart'
+			'title' => 'Cart',
+			'cart_data' => $CartData,
+			'total' => $total
 		]);
 	}
 
@@ -94,8 +98,9 @@ class SafeBdMainController extends Controller
 
 	public function AddToCart(Request $Req) {
 		$ProductID = $Req->product_id;
+		$Name = $Req->name;
 		$Price = $Req->price;
-		$CartItems = ['id' => $ProductID, $Price];
+		$CartItems = ['id' => $ProductID, 'name' => $Name, 'price' => $Price];
 
 		if (!$Req->session()->exists('cart')) {
 			$Req->session()->put('cart', []);

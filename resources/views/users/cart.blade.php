@@ -15,34 +15,18 @@
     		</tr>
     	</thead>
     	<tbody>
-    		<tr>
-    			<th scope="row">1</th>
-    			<td>Product One</td>
-    			<td>৳ 50</td>
-    			<td>
-    				<ion-icon name="close-outline"></ion-icon>
-    			</td>
-    		</tr>
-    		<tr>
-    			<th scope="row">2</th>
-    			<td>Product One</td>
-    			<td>৳ 50</td>
-    			<td>
-    				<ion-icon name="close-outline"></ion-icon>
-    			</td>
-    		</tr>
-    		<tr>
-    			<th scope="row">3</th>
-    			<td>Product One</td>
-    			<td>৳ 50</td>
-    			<td>
-    				<ion-icon name="close-outline"></ion-icon>
-    			</td>
-    		</tr>
+    		@foreach ($cart_data as $key=>$item)
+					<tr>
+						<th scope="row">{{ ++$key }}</th>
+						<td>{{ $item['name'] }}</td>
+						<td>৳ {{ $item['price'] }}</td>
+						<td></td>
+					</tr>
+				@endforeach
     		<tr>
     			<th scope="row"></th>
     			<td>Total</td>
-    			<td>৳ 150</td>
+    			<td>৳ {{ $total }}</td>
     			<td></td>
     		</tr>
     	</tbody>
