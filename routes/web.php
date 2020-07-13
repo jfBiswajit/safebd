@@ -18,12 +18,10 @@ Route::post('/thank_you', 'SafeBdMainController@Thankyou');
 //     Route::get('/add_new_product', 'SafeBdMainController@AddNewProduct');
 // });
 
-Route::get('login', 'AuthController@index');
-Route::post('post-login', 'AuthController@postLogin');
-// Route::get('registration', 'AuthController@registration');
-Route::post('post-registration', 'AuthController@postRegistration');
-Route::get('dashboard', 'AuthController@dashboard');
-Route::get('logout', 'AuthController@logout');
+Route::get('login', 'AdminController@index');
+Route::post('post_login', 'AdminController@postLogin');
+Route::get('dashboard', 'AdminController@dashboard');
+Route::get('logout', 'AdminController@logout');
 
 Route::prefix('category')->group(function () {
   Route::get('/safety', 'SafeBdMainController@Safety');
