@@ -19,7 +19,6 @@ Route::get('/completed_orders', 'AdminController@CompletedOrder');
 Route::get('/add_new_product', 'AdminController@AddNewProduct');
 
 
-
 Route::get('/safety', 'SafeBdMainController@Safety');
 Route::get('/fire', 'SafeBdMainController@Fire');
 Route::get('/lab', 'SafeBdMainController@Lab');

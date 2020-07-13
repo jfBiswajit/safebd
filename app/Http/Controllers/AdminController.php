@@ -16,7 +16,7 @@ class AdminController extends Controller
 	public function index(Request $request)
 	{
 		if (Auth::check()) {
-			return view('admin.dashboard');
+			return Redirect::to("dashboard");
 		}
 		return view('admin.login', [
 			'title' => 'Checkout'
