@@ -10,10 +10,10 @@ Route::get('/checkout', 'SafeBdMainController@Checkout');
 Route::post('/thank_you', 'SafeBdMainController@Thankyou');
 
 
-Route::get('login', 'AdminController@index');
-Route::post('post_login', 'AdminController@postLogin');
-Route::get('logout', 'AdminController@logout');
-Route::get('dashboard', 'AdminController@dashboard');
+Route::get('/login', 'AdminController@index');
+Route::post('/post_login', 'AdminController@postLogin');
+Route::get('/logout', 'AdminController@logout');
+Route::get('/dashboard', 'AdminController@dashboard');
 Route::get('/pending_orders', 'AdminController@PendingOrder');
 Route::get('/completed_orders', 'AdminController@CompletedOrder');
 Route::get('/add_new_product', 'AdminController@AddNewProduct');

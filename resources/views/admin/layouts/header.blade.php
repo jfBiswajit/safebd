@@ -81,8 +81,8 @@
 						<div class="collapse" id="products" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
 							<nav class="sb-sidenav-menu-nested nav">
 								<a class="nav-link" href="{{ url('add_new_product') }}">Add New</a>
-								<a class="nav-link" href="layout-sidenav-light.html">Update</a>
-								<a class="nav-link" href="layout-sidenav-light.html">Delete</a>
+								<a class="nav-link" href="#">Update</a>
+								<a class="nav-link" href="#">Delete</a>
 							</nav>
 						</div>
 						<div class="sb-sidenav-menu-heading">Addons</div>
