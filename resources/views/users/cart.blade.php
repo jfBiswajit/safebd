@@ -32,7 +32,7 @@
     	</tbody>
     </table>
     <div class="d-flex">
-    	<a href="" class="btn btn-success ml-auto">Checkout Now</a>
+    	<a href="{{ url('checkout') }}" class="btn btn-success ml-auto">Checkout Now</a>
     </div>
   </div>
 </div>
