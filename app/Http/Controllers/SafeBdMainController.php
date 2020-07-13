@@ -60,9 +60,11 @@ class SafeBdMainController extends Controller
 		]);
 	}
 
-	public function Thankyou() {
+	public function Thankyou(Request $Req) {
+		$Name = $Req->name;
 		return view('users.thank_you', [
-			'title' => 'Checkout'
+			'title' => 'Checkout',
+			'name' => $Name
 		]);
 	}
 

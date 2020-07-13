@@ -5,7 +5,7 @@
     	<p>Thank you for visiting us and making your purchase! <br> We will contact you shortly!</p>
     </div>
     <div class="p-4 border">
-      <p class="font-weight-bold">Dear Biswajit,</p>
+      <p class="font-weight-bold">Dear {{ $name }},</p>
       <p class="font-weight-light">
       	Thank you for visiting us and making your first purchase! We’re glad that you found what you were looking for.
       	It is our goal that you are always happy with what you bought from us, so please let us know if your buying
@@ -13,7 +13,7 @@
       </p>
       <p>Best Regards,<br> safeBD.Net</p>
         <div class="d-flex">
-          <a href="" class="btn btn-success ml-auto">Go to Home</a>
+          <a href="{{ url('/') }}" class="btn btn-success ml-auto">Go to Home</a>
         </div>
     </div>
   </div>
