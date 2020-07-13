@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use app\constant\constant\Constant;
 use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\Auth;
@@ -77,8 +78,10 @@ class AdminController extends Controller
 	public function AddNewProduct()
 	{
 		if (Auth::check()) {
+			$Categories = Constant::$Categories;
 			return view('admin.add_new_product', [
-				'title' => 'Completed Orders'
+				'title' => 'Add New Product',
+				'categories' => $Categories
 			]);
 		}
 		return Redirect::to("login");

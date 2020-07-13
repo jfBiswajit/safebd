@@ -4,22 +4,24 @@
       <div class="row">
       	<div class="col-md-6 form-group">
       		<label>Product Name</label>
-      		<input type="text" class="form-control">
+      		<input type="text" class="form-control" required>
       	</div>
       	<div class="col-md-6 form-group">
       		<label for="">Description</label>
-      		<input type="text" class="form-control">
+      		<input type="text" class="form-control" required>
       	</div>
       	<div class="col-md-6 form-group">
       		<label for="inputState">Category</label>
-      		<select id="inputState" class="form-control">
+      		<select id="inputState" class="form-control" required>
       			<option selected>Choose...</option>
-      			<option>...</option>
+      			@foreach ($categories as $key=>$item)
+							<option value="{{ $key }}"> {{ $item }} </option>
+						@endforeach
       		</select>
       	</div>
       	<div class="col-md-6 form-group">
       		<label for="">Price</label>
-      		<input type="text" class="form-control">
+      		<input type="text" class="form-control" required>
       	</div>
       	<div class="col-md-6 form-group">
       		<label>Thumbnail</label>
