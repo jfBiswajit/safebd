@@ -1,15 +1,28 @@
 $(window).on("load", function () {
-	// makes sure the whole site is loaded
-	$("#status").fadeOut(); // will first fade out the loading animation
-	$("#preloader").delay(350).fadeOut("slow"); // will fade out the white DIV that covers the website.
+	$("#status").fadeOut();
+	$("#preloader").delay(350).fadeOut("slow");
 	$("body").delay(350).css({ overflow: "visible" });
 });
 
-
-var docWidth = document.documentElement.offsetWidth;
-
-[].forEach.call(document.querySelectorAll("*"), function (el) {
-	if (el.offsetWidth > docWidth) {
-		console.log(el);
-	}
-});
+// Start Coding Here
+$(function(){
+	toastr.options = {
+		closeButton: false,
+		debug: false,
+		newestOnTop: false,
+		progressBar: false,
+		positionClass: "toast-top-right",
+		preventDuplicates: false,
+		onclick: null,
+		showDuration: "300",
+		hideDuration: "1000",
+		timeOut: "5000",
+		extendedTimeOut: "1000",
+		showEasing: "swing",
+		hideEasing: "linear",
+		showMethod: "fadeIn",
+		hideMethod: "fadeOut",
+	};
+	toastr["success"]("Inconceivable!", "Item Added To Cart!");
+	console.log(1);
+})
