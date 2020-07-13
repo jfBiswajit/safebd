@@ -103,6 +103,9 @@ nav ul li a:hover {
 	#top_search {
 		display: none;
 	}
+		.card {
+			margin-bottom: 1.8rem !important;
+		}
 }
 
 
