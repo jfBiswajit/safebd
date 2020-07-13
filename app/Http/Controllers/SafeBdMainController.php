@@ -130,49 +130,49 @@ class SafeBdMainController extends Controller
 
 	public function Safety() {
 		return view('users.categories', [
-			'title' => 'how'
+			'title' => 'Safety'
 		]);
 	}
 
 	public function Fire() {
 		return view('users.categories', [
-			'title' => 'how'
+			'title' => 'Fire'
 		]);
 	}
 
 	public function Lab() {
 		return view('users.categories', [
-			'title' => 'how'
+			'title' => 'Lab'
 		]);
 	}
 
 	public function Electronics() {
 		return view('users.categories', [
-			'title' => 'how'
+			'title' => 'Electronics'
 		]);
 	}
 
 	public function Mechanical() {
 		return view('users.categories', [
-			'title' => 'how'
+			'title' => 'Mehanical'
 		]);
 	}
 
 	public function Cevil() {
 		return view('users.categories', [
-			'title' => 'how'
+			'title' => 'Cevil'
 		]);
 	}
 
 	public function Textile() {
 		return view('users.categories', [
-			'title' => 'how'
+			'title' => 'Textile'
 		]);
 	}
 
 	public function Islamic() {
 		return view('users.categories', [
-			'title' => 'how'
+			'title' => 'Islamic'
 		]);
 	}
 }

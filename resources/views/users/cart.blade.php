@@ -14,7 +14,7 @@
     			<th scope="col"></th>
     		</tr>
     	</thead>
-    	<tbody>
+    	<tbody class="font-weight-light">
     		@foreach ($cart_data as $key=>$item)
 					<tr>
 						<th scope="row">{{ ++$key }}</th>
@@ -23,7 +23,7 @@
 						<td></td>
 					</tr>
 				@endforeach
-    		<tr>
+    		<tr class="font-weight-bold">
     			<th scope="row"></th>
     			<td>Total</td>
     			<td>৳ {{ $total }}</td>
