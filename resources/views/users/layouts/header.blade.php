@@ -17,6 +17,9 @@
 	{{-- Favicon --}}
 	<link rel="shortcut icon" href="{{ asset('icon/favicon.png') }}" />
 
+	{{-- Toastr Js --}}
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js">
+
 	{{-- Custom CSS Style --}}
 	<link rel="stylesheet" href="{{ asset('css/main.css') }}">
 
