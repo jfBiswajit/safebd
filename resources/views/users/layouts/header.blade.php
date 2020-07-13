@@ -82,7 +82,7 @@
 				<ul class="navbar-nav w-70 mx-auto">
 					@foreach ($common_data['categories'] as $item)
 						<li class="nav-item">
-							<a class="nav-link" href="{{ $item }}">{{ $item }}</a>
+							<a class="nav-link {{ Request::is("$item") ? 'text-success' : '' }}" href="{{ url($item) }}">{{ $item }}</a>
 						</li>
 					@endforeach
 				</ul>

@@ -13,17 +13,15 @@ use Illuminate\Support\Facades\Redirect;
 class AdminController extends Controller
 {
 
-	public function index()
+	public function index(Request $request)
 	{
+		if (Auth::check()) {
+			return view('admin.dashboard');
+		}
 		return view('admin.login', [
 			'title' => 'Checkout'
 		]);
 	}
-
-	// public function registration()
-	// {
-	//     return view('registration');
-	// }
 
 	public function postLogin(Request $request)
 	{
@@ -37,23 +35,8 @@ class AdminController extends Controller
 			// Authentication passed...
 			return redirect()->intended('dashboard');
 		}
-		return Redirect::to("login")->withSuccess('Oppes! You have entered invalid credentials');
+		return Redirect::to("login");
 	}
-
-	// public function postRegistration(Request $request)
-	// {
-	//     request()->validate([
-	//         'name' => 'required',
-	//         'email' => 'required|email|unique:users',
-	//         'password' => 'required|min:6',
-	//     ]);
-
-	//     $data = $request->all();
-
-	//     $check = $this->create($data);
-
-	//     return Redirect::to("dashboard")->withSuccess('Great! You have Successfully loggedin');
-	// }
 
 	public function dashboard()
 	{
@@ -61,16 +44,7 @@ class AdminController extends Controller
 		if (Auth::check()) {
 			return view('admin.dashboard');
 		}
-		return Redirect::to("login")->withSuccess('Opps! You do not have access');
-	}
-
-	public function create(array $data)
-	{
-		return User::create([
-			'name' => $data['name'],
-			'email' => $data['email'],
-			'password' => Hash::make($data['password'])
-		]);
+		return Redirect::to("login");
 	}
 
 	public function logout()
@@ -78,5 +52,36 @@ class AdminController extends Controller
 		Session::flush();
 		Auth::logout();
 		return Redirect('login');
+	}
+
+	public function PendingOrder()
+	{
+		if (Auth::check()) {
+			return view('admin.pending_orders', [
+				'title' => 'Pending Orders'
+			]);
+		}
+		return Redirect::to("login");
+	}
+
+	public function CompletedOrder()
+	{
+		if (Auth::check()) {
+			return view('admin.completed_orders', [
+				'title' => 'Completed Orders'
+			]);
+		}
+		return Redirect::to("login");
+	}
+
+	public function AddNewProduct()
+	{
+		if (Auth::check()) {
+			return view('admin.add_new_product', [
+				'title' => 'Completed Orders'
+			]);
+		}
+		return Redirect::to("login");
+
 	}
 }

@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<meta name="description" content="" />
 	<meta name="author" content="" />
-	<title>Page Title - SB Admin</title>
+	<title>Admin Login</title>
 	<link href="css/styles.css" rel="stylesheet" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous">
 	</script>
@@ -25,7 +25,7 @@
 									<h3 class="text-center font-weight-light my-4">Login</h3>
 								</div>
 								<div class="card-body">
-									<form action="{{url('post-login')}}" method="POST">
+									<form action="{{url('post_login')}}" method="POST">
 										@csrf
 										<div class="form-group">
 											<label class="small mb-1" for="inputEmailAddress">Email</label>
