@@ -37,7 +37,9 @@
 			<div class="row">
 				<div class="col-xl-3">
 					<div class="logo">
-						<h1 class="font-Galada text-success">SafeBD.Net</h1>
+						<a href="{{ url('/') }}" style="text-decoration: none">
+							<h1 class="font-Galada text-success">SafeBD.Net</h1>
+						</a>
 					</div>
 				</div>
 				<div class="col-xl-5">
