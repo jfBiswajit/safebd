@@ -4,6 +4,7 @@
 <head>
 	{{-- Required meta tags --}}
 	<meta charset="utf-8">
+	<meta name="csrf-token" content="{{ csrf_token() }}">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	{{-- Bootstrap CSS --}}
@@ -57,7 +58,7 @@
 							</span>
 							<span style="position: relative">
 								<ion-icon name="cart-outline" style="font-size: 1.8rem" class="ml-4"></ion-icon>
-								<span class="cart_item_show">1</span>
+								<span class="cart_item_show" id="cart_val">{{ $cart_items }}</span>
 							</span>
 							<ion-icon name="person-outline" style="font-size: 1.8rem" class="mr-2 ml-4"></ion-icon>
 							<span class="log-reg">

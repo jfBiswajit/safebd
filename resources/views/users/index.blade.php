@@ -41,9 +41,9 @@
 					<div class="card">
 						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg" alt="Card image cap">
 						<div class="card-body">
-							<h5 class="card-title font-weight-light">Product Title</h5>
+							<h5 class="card-title font-weight-light text-capitalize">working here</h5>
 							<h5 class="float-right text-danger"><b>৳ 50</b></h5>
-							<a href="#" class="btn btn-success">Add To Cart</a>
+							<button href="#" class="btn btn-success add_to_cart" data-product-id="10" data-price="40">Add To Cart</button>
 						</div>
 					</div>
 				</div>

@@ -6,10 +6,17 @@ use Illuminate\Http\Request;
 
 class SafeBdMainController extends Controller
 {
-	public function index()
+	public function index(Request $Req)
 	{
+		if ($Req->session()->get('cart')) {
+			$CartItems = $Req->session()->get('cart');
+		} else {
+			$CartItems = [];
+		}
+
 		return view('users.index', [
-			'title' => 'Online Shopping For Health Care in Bangladesh'
+			'title' => 'Online Shopping For Health Care in Bangladesh',
+			'cart_items' => count($CartItems)
 		]);
 	}
 
@@ -65,5 +72,20 @@ class SafeBdMainController extends Controller
 		return view('admin.add_new_product', [
 			'title' => 'Completed Orders'
 		]);
+	}
+
+	public function AddToCart(Request $Req) {
+		$ProductID = $Req->product_id;
+		$Price = $Req->price;
+		$CartItems = ['id' => $ProductID, $Price];
+
+		if (!$Req->session()->exists('cart')) {
+			$Req->session()->put('cart', []);
+		}
+
+		$Req->session()->push('cart', $CartItems);
+		$TotalItems = count($Req->session()->get('cart'));
+
+		return response()->json(['TotalItems' => $TotalItems], 200);
 	}
 }

@@ -13,3 +13,5 @@ Route::get('/login', 'SafeBdMainController@Login');
 Route::get('/pending_orders', 'SafeBdMainController@PendingOrder');
 Route::get('/completed_orders', 'SafeBdMainController@CompletedOrder');
 Route::get('/add_new_product', 'SafeBdMainController@AddNewProduct');
+
+Route::post('/add_to_cart', 'SafeBdMainController@AddToCart');
