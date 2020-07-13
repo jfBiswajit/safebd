@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use app\constant\constant\Constant;
 use App\Order;
 use Illuminate\Support\Facades\View;
-use Illuminate\Contracts\View\View as ViewView;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
@@ -12,21 +12,26 @@ class SafeBdMainController extends Controller
 {
 	public function __construct()
 	{
-		$CartData = Session::get('cart');
+		$Cart = Session::get('cart');
+		$Categories = Constant::$Categories;
+		$CommonData = [
+			'cart' => $Cart,
+			'categories' => $Categories
+		];
 
-		if ($CartData) {
-			$CartItems = Session::get('cart');
+		if ($CommonData['cart']) {
+			$CommonData['cart'] = count(Session::get('cart'));
 		} else {
-			$CartItems = [];
+			$CommonData['cart'] = 0;
 		}
 
-		View::share('cart_items', count($CartItems));
+		View::share('common_data', $CommonData);
 	}
 
 	public function index(Request $Req)
 	{
 		return view('users.index', [
-			'title' => 'Online Shopping For Health Care in Bangladesh',
+			'title' => 'Online Shopping For Health Care in Bangladesh'
 		]);
 	}
 

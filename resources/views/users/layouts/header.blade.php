@@ -59,7 +59,7 @@
 							<span style="position: relative">
 								<a class="text-dark" href="{{ url('cart') }}">
 									<ion-icon name="cart-outline" style="font-size: 1.8rem" class="ml-4"></ion-icon>
-									<span class="cart_item_show" id="cart_val">{{ $cart_items }}</span>
+									<span class="cart_item_show" id="cart_val">{{ $common_data['cart'] }}</span>
 								</a>
 							</span>
 							<ion-icon name="person-outline" style="font-size: 1.8rem" class="mr-2 ml-4"></ion-icon>
@@ -78,30 +78,11 @@
 			</button>
 			<div class="collapse navbar-collapse text-uppercase" id="navbarNavDropdown">
 				<ul class="navbar-nav w-70 mx-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="#">Safety</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Fire</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Lab</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Electronics</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Mechanical</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Cevil</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Textile</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Islamic</a>
-					</li>
+					@foreach ($common_data['categories'] as $item)
+						<li class="nav-item">
+							<a class="nav-link" href="#">{{ $item }}</a>
+						</li>
+					@endforeach
 				</ul>
 			</div>
 		</nav>
