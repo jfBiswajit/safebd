@@ -12,12 +12,10 @@ Route::post('/thank_you', 'SafeBdMainController@Thankyou');
 Route::get('/login', 'SafeBdMainController@Login')->name('login');;
 
 Route::group(['middleware' => 'auth'], function() {
-  Route::prefix('admin')->group(function () {
     Route::get('/dashboard', 'SafeBdMainController@Dashboard');
     Route::get('/pending_orders', 'SafeBdMainController@PendingOrder');
     Route::get('/completed_orders', 'SafeBdMainController@CompletedOrder');
     Route::get('/add_new_product', 'SafeBdMainController@AddNewProduct');
-  });
 });
 
 Route::prefix('category')->group(function () {
