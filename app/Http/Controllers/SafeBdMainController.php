@@ -2,21 +2,39 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\View;
+use Illuminate\Contracts\View\View as ViewView;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class SafeBdMainController extends Controller
 {
-	public function index(Request $Req)
+	public function __construct()
 	{
-		if ($Req->session()->get('cart')) {
-			$CartItems = $Req->session()->get('cart');
+		$CartData = Session::get('cart');
+		// $CartData = Session::all();
+		// dd($CartData);
+
+		if ($CartData) {
+			$CartItems = Session::get('cart');
 		} else {
 			$CartItems = [];
 		}
 
+		View::share('cart_items', count($CartItems));
+	}
+
+	public function index(Request $Req)
+	{
+		// if ($Req->session()->get('cart')) {
+		// 	$CartItems = $Req->session()->get('cart');
+		// } else {
+		// 	$CartItems = [];
+		// }
+
 		return view('users.index', [
 			'title' => 'Online Shopping For Health Care in Bangladesh',
-			'cart_items' => count($CartItems)
+			// 'cart_items' => count($CartItems)
 		]);
 	}
 

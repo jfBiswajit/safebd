@@ -57,8 +57,10 @@
 								<span>+88 01842181614</span>
 							</span>
 							<span style="position: relative">
-								<ion-icon name="cart-outline" style="font-size: 1.8rem" class="ml-4"></ion-icon>
-								<span class="cart_item_show" id="cart_val">{{ $cart_items }}</span>
+								<a class="text-dark" href="{{ url('cart') }}">
+									<ion-icon name="cart-outline" style="font-size: 1.8rem" class="ml-4"></ion-icon>
+									<span class="cart_item_show" id="cart_val">{{ $cart_items }}</span>
+								</a>
 							</span>
 							<ion-icon name="person-outline" style="font-size: 1.8rem" class="mr-2 ml-4"></ion-icon>
 							<span class="log-reg">
