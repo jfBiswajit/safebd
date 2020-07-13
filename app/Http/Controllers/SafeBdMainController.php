@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Order;
 use Illuminate\Support\Facades\View;
 use Illuminate\Contracts\View\View as ViewView;
 use Illuminate\Http\Request;
@@ -62,6 +63,25 @@ class SafeBdMainController extends Controller
 
 	public function Thankyou(Request $Req) {
 		$Name = $Req->name;
+		$Phone = $Req->phone;
+		$Address = $Req->address;
+		$Address_op = $Req->address_op;
+		$TotalItemsInCart = Session::get('cart');
+
+		foreach($TotalItemsInCart as $item) {
+			$Order = new Order();
+			$Order->name = $Name;
+			$Order->phone = $Phone;
+			$Order->address = $Address;
+			$Order->address_op = $Address_op;
+			$Order->product_id = $item['id'];
+			$Order->quantity = 1;
+			$Order->price = $item['price'];
+			$Order->save();
+		}
+
+		session()->forget('cart');
+
 		return view('users.thank_you', [
 			'title' => 'Checkout',
 			'name' => $Name
