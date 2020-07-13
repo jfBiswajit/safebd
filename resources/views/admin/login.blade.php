@@ -25,17 +25,17 @@
 									<h3 class="text-center font-weight-light my-4">Login</h3>
 								</div>
 								<div class="card-body">
-									<form method="GET" action="{{ url('/dashboard') }}">
+									<form action="{{url('post-login')}}" method="POST">
 										@csrf
 										<div class="form-group">
 											<label class="small mb-1" for="inputEmailAddress">Email</label>
 											<input class="form-control py-4" id="inputEmailAddress" type="email"
-												placeholder="Enter email address" name="email" />
+												placeholder="Enter email address" name="email" required/>
 										</div>
 										<div class="form-group">
 											<label class="small mb-1" for="inputPassword">Password</label>
 											<input class="form-control py-4" id="inputPassword" type="password"
-												placeholder="Enter password" name="password"/>
+												placeholder="Enter password" name="password" required/>
 										</div>
 										<div class="form-group">
 											<div class="custom-control custom-checkbox">

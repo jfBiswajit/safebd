@@ -93,17 +93,17 @@ class SafeBdMainController extends Controller
 		]);
 	}
 
-	public function Dashboard() {
-		return view('admin.dashboard', [
-			'title' => 'Checkout'
-		]);
-	}
+	// public function Dashboard() {
+	// 	return view('admin.dashboard', [
+	// 		'title' => 'Checkout'
+	// 	]);
+	// }
 
-	public function Login() {
-		return view('admin.login', [
-			'title' => 'Checkout'
-		]);
-	}
+	// public function Login() {
+	// 	return view('admin.login', [
+	// 		'title' => 'Checkout'
+	// 	]);
+	// }
 
 	public function PendingOrder() {
 		return view('admin.pending_orders', [
