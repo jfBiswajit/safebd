@@ -29,11 +29,12 @@
 										</td>
 										<td>{{ $item->name }}</td>
 										<td>{{ $item->phone }}</td>
-										<td>{{ $item->product_id }}</td>
+										<td>{{ $item->name }}</td>
 										<td>{{ $item->quantity }}</td>
 										<td>{{ $item->price }}</td>
 										<td>{{ $item->address }}</td>
-										<td><button class="btn btn-success btn-block">Delivered</button></td>
+										<td><button class="btn btn-success btn-block delivered_btn" data-id="{{ $item->id }}">Delivered</button>
+										</td>
 									</tr>
 							@endforeach
   					</tbody>
