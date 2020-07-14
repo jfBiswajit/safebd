@@ -89,4 +89,13 @@ class AdminController extends Controller
 		return Redirect::to("login");
 
 	}
+
+	public function StoreNewProduct(Request $Req)
+	{
+		if (Auth::check()) {
+			dd($Req->all());
+		}
+		return Redirect::to("login");
+
+	}
 }
