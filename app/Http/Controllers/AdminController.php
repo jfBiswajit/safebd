@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use app\constant\constant\Constant;
+use App\Product;
 use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\Auth;
@@ -93,8 +94,16 @@ class AdminController extends Controller
 	public function StoreNewProduct(Request $Req)
 	{
 		if (Auth::check()) {
-			$file = $Req->thumb->store('/storage/products', 'public');
-			dd($file);
+			$thumb = $Req->thumb->store('products', 'public');
+			$Product = new Product;
+			$Product->name = $Req->name;
+			$Product->desc = $Req->desc;
+			$Product->category = $Req->id;
+			$Product->price = $Req->price;
+			$Product->thumb = $thumb;
+			if ($Product->save()) {
+				return Redirect::to("add_new_product");
+			}
 		}
 		return Redirect::to("login");
 
