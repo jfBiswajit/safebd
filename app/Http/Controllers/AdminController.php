@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use app\constant\constant\Constant;
+use App\Order;
 use App\Product;
 use Illuminate\Http\Request;
 use App\User;
@@ -157,7 +158,7 @@ class AdminController extends Controller
 	}
 
 	public function Delivered(Request $Req) {
-		if (DB::table('orders')->where('id', $Req->id)->update(['status' => 1])) {
+		if (Order::where('id', $Req->id)->update(['status' => 1])) {
 			return response()->json(['success' => true], 200);
 		}
 		return response()->json(['success' => false], 200);
