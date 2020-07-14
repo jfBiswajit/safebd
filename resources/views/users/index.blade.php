@@ -79,7 +79,7 @@
 				</div>
 			</div>
 			@endforeach
-	</div>
+		</div>
 	</div>
 </section>
 <section id="safety">
@@ -109,7 +109,7 @@
 				</div>
 			</div>
 			@endforeach
-	</div>
+		</div>
 	</div>
 </section>
 <section id="safety">
@@ -139,7 +139,7 @@
 				</div>
 			</div>
 			@endforeach
-	</div>
+		</div>
 	</div>
 </section>
 @include('users.layouts.footer')

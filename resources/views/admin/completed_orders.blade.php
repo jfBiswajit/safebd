@@ -24,7 +24,8 @@
 						@foreach ($orders as $key=>$item)
 						<tr>
 							<td>{{ ++$key }}</td>
-							<td>{{ date('d-M-Y', strtotime($item->updated_at)) }} <br> ({{ date('h:i A', strtotime($item->updated_at)) }})
+							<td>{{ date('d-M-Y', strtotime($item->updated_at)) }} <br>
+								({{ date('h:i A', strtotime($item->updated_at)) }})
 							<td>{{ $item->name }}</td>
 							<td>{{ $item->phone }}</td>
 							<td>{{ $item->product_id }}</td>
