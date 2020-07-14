@@ -7,6 +7,7 @@ use App\Product;
 use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 // use Session;
 use Illuminate\Support\Facades\Session;
@@ -21,7 +22,7 @@ class AdminController extends Controller
 			return Redirect::to("dashboard");
 		}
 		return view('admin.login', [
-			'title' => 'Checkout'
+			'title' => 'Login'
 		]);
 	}
 
@@ -44,8 +45,16 @@ class AdminController extends Controller
 	{
 
 		if (Auth::check()) {
+			$PendingOrders = DB::table('orders')->where('status', 0)->get();
+			$CompletedOrders = DB::table('orders')->where('status', 1)->get();
+			$TotalProducts = DB::table('products')->get();
+			// dd(count($PendingOrders));
 			return view('admin.dashboard', [
-				'title' => 'Dashboard'
+				'title' => 'Dashboard',
+				'pending_order' => count($PendingOrders),
+				'completed_order' => count($CompletedOrders),
+				'total_product' => count($TotalProducts),
+				'total_category' => count(Constant::$Categories)
 			]);
 		}
 		return Redirect::to("login");
@@ -105,9 +114,9 @@ class AdminController extends Controller
 				// return Redirect::back()->with('message', 'Operation Successful !');
 				// return Redirect::back()->with('message', 'Operation Successful !');
 				// return redirect('add_new_product')->with('status', 'Profile updated!');
-				$Req->session()->flash('status', 'Task was successful!');
-				return redirect('dashboard');
-				// return redirect('add_new_product')->with('flashMessage', 'test');
+				// $Req->session()->flash('status', 'Task was successful!');
+				// return redirect('dashboard');
+				return redirect('add_new_product');
 
 				// return Redirect::to("add_new_product")->with('status', 'Profile updated!');
 			}

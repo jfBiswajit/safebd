@@ -20,6 +20,7 @@ class CreateOrdersTable extends Migration
             $table->integer('product_id');
             $table->integer('quantity');
             $table->integer('price');
+            $table->string('status')->default(0);
             $table->string('address')->nullable();
             $table->string('address_op')->nullable();
             $table->timestamps();
