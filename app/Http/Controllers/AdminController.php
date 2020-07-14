@@ -78,8 +78,10 @@ class AdminController extends Controller
 
 	public function PendingOrder()
 	{
+
 		if (Auth::check()) {
 			$PendingOrders = DB::table('orders')->where('status', 0)->get();
+			$Orders = [];
 			foreach($PendingOrders as $item) {
 				$Product = DB::table('products')->find($item->product_id);
 				$item->name = $Product->name;
@@ -99,6 +101,7 @@ class AdminController extends Controller
 	{
 		if (Auth::check()) {
 			$PendingOrders = DB::table('orders')->where('status', 1)->get();
+			$Orders = [];
 
 			foreach ($PendingOrders as $item) {
 				$Product = DB::table('products')->find($item->product_id);
@@ -151,5 +154,12 @@ class AdminController extends Controller
 		}
 		return Redirect::to("login");
 
+	}
+
+	public function Delivered(Request $Req) {
+		if (DB::table('orders')->where('id', $Req->id)->update(['status' => 1])) {
+			return response()->json(['success' => true], 200);
+		}
+		return response()->json(['success' => false], 200);
 	}
 }

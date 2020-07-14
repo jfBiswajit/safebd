@@ -18,6 +18,7 @@ Route::get('/pending_orders', 'AdminController@PendingOrder');
 Route::get('/completed_orders', 'AdminController@CompletedOrder');
 Route::get('/add_new_product', 'AdminController@AddNewProduct');
 Route::post('/add_new_product', 'AdminController@StoreNewProduct');
+Route::post('/delivered', 'AdminController@Delivered');
 
 
 Route::get('/safety', 'SafeBdMainController@Safety');
