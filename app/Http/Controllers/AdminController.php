@@ -93,7 +93,8 @@ class AdminController extends Controller
 	public function StoreNewProduct(Request $Req)
 	{
 		if (Auth::check()) {
-			dd($Req->all());
+			$file = $Req->thumb->store('/storage/products', 'public');
+			dd($file);
 		}
 		return Redirect::to("login");
 
