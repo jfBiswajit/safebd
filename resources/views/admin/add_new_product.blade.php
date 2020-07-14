@@ -1,7 +1,7 @@
 @include('admin.layouts.header')
   <div class="container p-5">
 		<div class="border rounded">
-			<h4 class="bg-light p-3 text-muted">Add New Product</h4>
+			<h4 class="bg-light  p-3 text-muted">Add New Product</h4>
 			<form class="p-3" method="POST" action="{{ url('add_new_product') }}" enctype="multipart/form-data">
 				@csrf
 				<div class="row">

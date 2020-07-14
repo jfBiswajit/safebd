@@ -79,8 +79,10 @@ class AdminController extends Controller
 	public function PendingOrder()
 	{
 		if (Auth::check()) {
+			$PendingOrders = DB::table('orders')->where('status', 0)->get();
 			return view('admin.pending_orders', [
-				'title' => 'Pending Orders'
+				'title' => 'Pending Orders',
+				'orders' => $PendingOrders
 			]);
 		}
 		return Redirect::to("login");
@@ -89,8 +91,11 @@ class AdminController extends Controller
 	public function CompletedOrder()
 	{
 		if (Auth::check()) {
+			$PendingOrders = DB::table('orders')->where('status', 1)->get();
 			return view('admin.completed_orders', [
-				'title' => 'Completed Orders'
+				'title' => 'Completed Orders',
+				'orders' => $PendingOrders
+
 			]);
 		}
 		return Redirect::to("login");
