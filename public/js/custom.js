@@ -13,7 +13,7 @@ $(function () {
 	});
 
 	$(".add_to_cart").click(function () {
-		const ProductID = $(this).attr("data-price");
+		const ProductID = $(this).attr("data-id");
 		const Name = $(this).attr("data-name");
 		const Price = $(this).attr("data-price");
 		const CartValEl = $("#cart_val");
@@ -27,6 +27,7 @@ $(function () {
 				price: Price,
 			},
 			success: function (response) {
+				console.log(ProductID);
 				CartValEl.text(response.TotalItems);
 				toastr.options = {
 					closeButton: false,

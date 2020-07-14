@@ -29,7 +29,7 @@
 										</td>
 										<td>{{ $item->name }}</td>
 										<td>{{ $item->phone }}</td>
-										<td>{{ $item->name }}</td>
+										<td>{{ $item->product }}</td>
 										<td>{{ $item->quantity }}</td>
 										<td>{{ $item->price }}</td>
 										<td>{{ $item->address }}</td>

@@ -87,7 +87,7 @@ class AdminController extends Controller
 			$Orders = [];
 			foreach($PendingOrders as $item) {
 				$Product = DB::table('products')->find($item->product_id);
-				$item->name = $Product->name;
+				$item->product = $Product->name;
 				$Orders[] = $item;
 			}
 
