@@ -102,7 +102,14 @@ class AdminController extends Controller
 			$Product->price = $Req->price;
 			$Product->thumb = $thumb;
 			if ($Product->save()) {
-				return Redirect::to("add_new_product");
+				// return Redirect::back()->with('message', 'Operation Successful !');
+				// return Redirect::back()->with('message', 'Operation Successful !');
+				// return redirect('add_new_product')->with('status', 'Profile updated!');
+				$Req->session()->flash('status', 'Task was successful!');
+				return redirect('dashboard');
+				// return redirect('add_new_product')->with('flashMessage', 'test');
+
+				// return Redirect::to("add_new_product")->with('status', 'Profile updated!');
 			}
 		}
 		return Redirect::to("login");
