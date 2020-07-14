@@ -54,7 +54,7 @@
 							Dashboard
 						</a>
 
-						<a class="nav-link" href="index.html">
+						<a class="nav-link" href="#">
 							<div class="sb-nav-link-icon"><i class="fas fa-cubes"></i></div>
 							Stocks
 						</a>

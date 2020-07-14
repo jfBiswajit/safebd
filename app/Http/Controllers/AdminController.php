@@ -80,6 +80,13 @@ class AdminController extends Controller
 	{
 		if (Auth::check()) {
 			$PendingOrders = DB::table('orders')->where('status', 0)->get();
+
+			foreach($PendingOrders as $item) {
+				$Product = DB::table('products')->find($item->product_id);
+				$item->product_id = $Product->name;
+				$PendingOrders[] = $item;
+			}
+
 			return view('admin.pending_orders', [
 				'title' => 'Pending Orders',
 				'orders' => $PendingOrders
@@ -92,6 +99,13 @@ class AdminController extends Controller
 	{
 		if (Auth::check()) {
 			$PendingOrders = DB::table('orders')->where('status', 1)->get();
+
+			foreach ($PendingOrders as $item) {
+				$Product = DB::table('products')->find($item->product_id);
+				$item->product_id = $Product->name;
+				$PendingOrders[] = $item;
+			}
+
 			return view('admin.completed_orders', [
 				'title' => 'Completed Orders',
 				'orders' => $PendingOrders
