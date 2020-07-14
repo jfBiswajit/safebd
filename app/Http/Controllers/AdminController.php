@@ -12,9 +12,18 @@ use Illuminate\Support\Facades\Hash;
 // use Session;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\View;
 
 class AdminController extends Controller
 {
+	public function __construct()
+	{
+		$user = Auth::user();
+		$data = [
+			'name' => $user->name
+		];
+		View::share('data', $data);
+	}
 
 	public function index(Request $request)
 	{
@@ -48,13 +57,13 @@ class AdminController extends Controller
 			$PendingOrders = DB::table('orders')->where('status', 0)->get();
 			$CompletedOrders = DB::table('orders')->where('status', 1)->get();
 			$TotalProducts = DB::table('products')->get();
-			// dd(count($PendingOrders));
+
 			return view('admin.dashboard', [
 				'title' => 'Dashboard',
 				'pending_order' => count($PendingOrders),
 				'completed_order' => count($CompletedOrders),
 				'total_product' => count($TotalProducts),
-				'total_category' => count(Constant::$Categories)
+				'total_category' => count(Constant::$Categories),
 			]);
 		}
 		return Redirect::to("login");

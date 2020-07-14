@@ -96,7 +96,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="sb-sidenav-footer" style="text-align: center">BISWAJIT BISWAS</div>
+				<div class="sb-sidenav-footer text-uppercase" style="text-align: center">{{ $data['name'] }}</div>
 			</nav>
 		</div>
 		<div id="layoutSidenav_content">
