@@ -3,13 +3,13 @@
 	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img class="d-block w-100" src="{{ asset('img/hero/demo.jpg') }}" alt="First slide">
+				<img class="d-block w-100" src="{{ asset('img/hero/banner-1.png') }}" alt="First slide">
 			</div>
 			<div class="carousel-item">
-				<img class="d-block w-100" src="{{ asset('img/hero/demo.jpg') }}" alt="Second slide">
+				<img class="d-block w-100" src="{{ asset('img/hero/banner-2.png') }}" alt="Second slide">
 			</div>
 			<div class="carousel-item">
-				<img class="d-block w-100" src="{{ asset('img/hero/demo.jpg') }}" alt="Third slide">
+				<img class="d-block w-100" src="{{ asset('img/hero/banner-3.png') }}" alt="Third slide">
 			</div>
 		</div>
 		<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -59,7 +59,7 @@
 			<p class="text-muted font-weight-light">New Arrived On SafeBD</p>
 		</div>
 		<div class="float-right">
-			<a class="btn btn-outline-primary">
+			<a href="{{ url('safety') }}" class="btn btn-outline-primary">
 				<h5>SEE ALL</h5>
 			</a>
 		</div>
@@ -89,7 +89,7 @@
 			<p class="text-muted font-weight-light">New Arrived On SafeBD</p>
 		</div>
 		<div class="float-right">
-			<a class="btn btn-outline-primary">
+			<a href="{{ url('lab') }}" class="btn btn-outline-primary">
 				<h5>SEE ALL</h5>
 			</a>
 		</div>
@@ -119,7 +119,7 @@
 			<p class="text-muted font-weight-light">New Arrived On SafeBD</p>
 		</div>
 		<div class="float-right">
-			<a class="btn btn-outline-primary">
+			<a href="{{ url('electronics') }}" class="btn btn-outline-primary">
 				<h5>SEE ALL</h5>
 			</a>
 		</div>
