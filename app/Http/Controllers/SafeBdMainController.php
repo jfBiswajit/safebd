@@ -6,6 +6,7 @@ use app\constant\constant\Constant;
 use App\Order;
 use Illuminate\Support\Facades\View;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 
 class SafeBdMainController extends Controller
@@ -30,8 +31,35 @@ class SafeBdMainController extends Controller
 
 	public function index(Request $Req)
 	{
+		$LatestProducts = DB::table('products')
+			->orderBy('id', 'desc')
+			->take(4)
+			->get();
+
+		$SafetyProducts = DB::table('products')
+			->where('category', 1)
+			->orderBy('id', 'desc')
+			->take(4)
+			->get();
+
+		$LabProducts = DB::table('products')
+			->where('category', 3)
+			->orderBy('id', 'desc')
+			->take(4)
+			->get();
+
+		$Electronics = DB::table('products')
+			->where('category', 4)
+			->orderBy('id', 'desc')
+			->take(4)
+			->get();
+
 		return view('users.index', [
-			'title' => 'Online Shopping For Health Care in Bangladesh'
+			'title' => 'Online Shopping For Health Care in Bangladesh',
+			'safety_products' => $SafetyProducts,
+			'lab_products' => $LabProducts,
+			'electronics' => $Electronics,
+			'latest_products' => $LatestProducts,
 		]);
 	}
 
@@ -129,50 +157,98 @@ class SafeBdMainController extends Controller
 	}
 
 	public function Safety() {
-		return view('users.categories', [
-			'title' => 'Safety'
+		$Products = DB::table('products')
+			->where('category', 1)
+			->orderBy('id', 'desc')
+			->get();
+
+		return view('users.all_products', [
+			'title' => 'Safety',
+			'products' => $Products,
 		]);
 	}
 
 	public function Fire() {
-		return view('users.categories', [
-			'title' => 'Fire'
+		$Products = DB::table('products')
+		->where('category', 2)
+			->orderBy('id', 'desc')
+			->get();
+
+		return view('users.all_products', [
+			'title' => 'Safety',
+			'products' => $Products,
 		]);
 	}
 
 	public function Lab() {
-		return view('users.categories', [
-			'title' => 'Lab'
+		$Products = DB::table('products')
+		->where('category', 3)
+			->orderBy('id', 'desc')
+			->get();
+
+		return view('users.all_products', [
+			'title' => 'Safety',
+			'products' => $Products,
 		]);
 	}
 
 	public function Electronics() {
-		return view('users.categories', [
-			'title' => 'Electronics'
+		$Products = DB::table('products')
+		->where('category', 4)
+			->orderBy('id', 'desc')
+			->get();
+
+		return view('users.all_products', [
+			'title' => 'Safety',
+			'products' => $Products,
 		]);
 	}
 
 	public function Mechanical() {
-		return view('users.categories', [
-			'title' => 'Mehanical'
+		$Products = DB::table('products')
+		->where('category', 5)
+			->orderBy('id', 'desc')
+			->get();
+
+		return view('users.all_products', [
+			'title' => 'Safety',
+			'products' => $Products,
 		]);
 	}
 
 	public function Cevil() {
-		return view('users.categories', [
-			'title' => 'Cevil'
+		$Products = DB::table('products')
+		->where('category', 6)
+			->orderBy('id', 'desc')
+			->get();
+
+		return view('users.all_products', [
+			'title' => 'Safety',
+			'products' => $Products,
 		]);
 	}
 
 	public function Textile() {
-		return view('users.categories', [
-			'title' => 'Textile'
+		$Products = DB::table('products')
+		->where('category', 7)
+			->orderBy('id', 'desc')
+			->get();
+
+		return view('users.all_products', [
+			'title' => 'Safety',
+			'products' => $Products,
 		]);
 	}
 
 	public function Islamic() {
-		return view('users.categories', [
-			'title' => 'Islamic'
+		$Products = DB::table('products')
+		->where('category', 8)
+			->orderBy('id', 'desc')
+			->get();
+
+		return view('users.all_products', [
+			'title' => 'Safety',
+			'products' => $Products,
 		]);
 	}
 }
