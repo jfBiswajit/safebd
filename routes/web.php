@@ -2,12 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', 'SafeBdMainController@index');
-Route::get('/product_details', 'SafeBdMainController@ProductDetails');
-Route::get('/cart', 'SafeBdMainController@Cart');
-Route::post('/add_to_cart', 'SafeBdMainController@AddToCart');
-Route::get('/checkout', 'SafeBdMainController@Checkout');
-Route::post('/thank_you', 'SafeBdMainController@Thankyou');
+Route::get('/', 'MainController@index');
+Route::get('/product_details', 'MainController@ProductDetails');
+Route::get('/cart', 'MainController@Cart');
+Route::post('/add_to_cart', 'MainController@AddToCart');
+Route::get('/checkout', 'MainController@Checkout');
+Route::post('/thank_you', 'MainController@Thankyou');
 
 Route::get('/login', 'AdminController@index');
 Route::post('/post_login', 'AdminController@postLogin');
@@ -19,11 +19,11 @@ Route::get('/add_new_product', 'AdminController@AddNewProduct');
 Route::post('/add_new_product', 'AdminController@StoreNewProduct');
 Route::post('/delivered', 'AdminController@Delivered');
 
-Route::get('/safety', 'SafeBdMainController@Safety');
-Route::get('/fire', 'SafeBdMainController@Fire');
-Route::get('/lab', 'SafeBdMainController@Lab');
-Route::get('/electronics', 'SafeBdMainController@Electronics');
-Route::get('/mechanical', 'SafeBdMainController@Mechanical');
-Route::get('/cevil', 'SafeBdMainController@Cevil');
-Route::get('/textile', 'SafeBdMainController@Textile');
-Route::get('/islamic', 'SafeBdMainController@Islamic');
+Route::get('/safety', 'MainController@Safety');
+Route::get('/fire', 'MainController@Fire');
+Route::get('/lab', 'MainController@Lab');
+Route::get('/electronics', 'MainController@Electronics');
+Route::get('/mechanical', 'MainController@Mechanical');
+Route::get('/cevil', 'MainController@Cevil');
+Route::get('/textile', 'MainController@Textile');
+Route::get('/islamic', 'MainController@Islamic');

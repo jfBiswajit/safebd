@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 
-class SafeBdMainController extends Controller
+class MainController extends Controller
 {
 	public function __construct()
 	{
@@ -63,21 +63,23 @@ class SafeBdMainController extends Controller
 		]);
 	}
 
-	public function ProductDetails() {
+	public function ProductDetails()
+	{
 		return view('users.product_details', [
 			'title' => 'Product View'
 		]);
 	}
 
-	public function Cart() {
-		if(Session::get('cart')) {
+	public function Cart()
+	{
+		if (Session::get('cart')) {
 			$CartData = Session::get('cart');
 		} else {
 			$CartData = [];
 		}
 
 		$total = 0;
-		foreach($CartData as $item) {
+		foreach ($CartData as $item) {
 			$total += (int) $item['price'];
 		}
 
@@ -88,20 +90,22 @@ class SafeBdMainController extends Controller
 		]);
 	}
 
-	public function Checkout() {
+	public function Checkout()
+	{
 		return view('users.checkout', [
 			'title' => 'Checkout'
 		]);
 	}
 
-	public function Thankyou(Request $Req) {
+	public function Thankyou(Request $Req)
+	{
 		$Name = $Req->name;
 		$Phone = $Req->phone;
 		$Address = $Req->address;
 		$Address_op = $Req->address_op;
 		$TotalItemsInCart = Session::get('cart');
 
-		foreach($TotalItemsInCart as $item) {
+		foreach ($TotalItemsInCart as $item) {
 			$Order = new Order();
 			$Order->name = $Name;
 			$Order->phone = $Phone;
@@ -122,25 +126,29 @@ class SafeBdMainController extends Controller
 	}
 
 
-	public function PendingOrder() {
+	public function PendingOrder()
+	{
 		return view('admin.pending_orders', [
 			'title' => 'Pending Orders'
 		]);
 	}
 
-	public function CompletedOrder() {
+	public function CompletedOrder()
+	{
 		return view('admin.completed_orders', [
 			'title' => 'Completed Orders'
 		]);
 	}
 
-	public function AddNewProduct() {
+	public function AddNewProduct()
+	{
 		return view('admin.add_new_product', [
 			'title' => 'Completed Orders'
 		]);
 	}
 
-	public function AddToCart(Request $Req) {
+	public function AddToCart(Request $Req)
+	{
 		$ProductID = $Req->product_id;
 		$Name = $Req->name;
 		$Price = $Req->price;
@@ -156,7 +164,8 @@ class SafeBdMainController extends Controller
 		return response()->json(['TotalItems' => $TotalItems], 200);
 	}
 
-	public function Safety() {
+	public function Safety()
+	{
 		$Products = DB::table('products')
 			->where('category', 1)
 			->orderBy('id', 'desc')
@@ -168,9 +177,10 @@ class SafeBdMainController extends Controller
 		]);
 	}
 
-	public function Fire() {
+	public function Fire()
+	{
 		$Products = DB::table('products')
-		->where('category', 2)
+			->where('category', 2)
 			->orderBy('id', 'desc')
 			->get();
 
@@ -180,9 +190,10 @@ class SafeBdMainController extends Controller
 		]);
 	}
 
-	public function Lab() {
+	public function Lab()
+	{
 		$Products = DB::table('products')
-		->where('category', 3)
+			->where('category', 3)
 			->orderBy('id', 'desc')
 			->get();
 
@@ -192,9 +203,10 @@ class SafeBdMainController extends Controller
 		]);
 	}
 
-	public function Electronics() {
+	public function Electronics()
+	{
 		$Products = DB::table('products')
-		->where('category', 4)
+			->where('category', 4)
 			->orderBy('id', 'desc')
 			->get();
 
@@ -204,9 +216,10 @@ class SafeBdMainController extends Controller
 		]);
 	}
 
-	public function Mechanical() {
+	public function Mechanical()
+	{
 		$Products = DB::table('products')
-		->where('category', 5)
+			->where('category', 5)
 			->orderBy('id', 'desc')
 			->get();
 
@@ -216,9 +229,10 @@ class SafeBdMainController extends Controller
 		]);
 	}
 
-	public function Cevil() {
+	public function Cevil()
+	{
 		$Products = DB::table('products')
-		->where('category', 6)
+			->where('category', 6)
 			->orderBy('id', 'desc')
 			->get();
 
@@ -228,9 +242,10 @@ class SafeBdMainController extends Controller
 		]);
 	}
 
-	public function Textile() {
+	public function Textile()
+	{
 		$Products = DB::table('products')
-		->where('category', 7)
+			->where('category', 7)
 			->orderBy('id', 'desc')
 			->get();
 
@@ -240,9 +255,10 @@ class SafeBdMainController extends Controller
 		]);
 	}
 
-	public function Islamic() {
+	public function Islamic()
+	{
 		$Products = DB::table('products')
-		->where('category', 8)
+			->where('category', 8)
 			->orderBy('id', 'desc')
 			->get();
 

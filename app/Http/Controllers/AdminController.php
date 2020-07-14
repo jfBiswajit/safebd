@@ -81,16 +81,14 @@ class AdminController extends Controller
 
 	public function PendingOrder()
 	{
-
 		if (Auth::check()) {
 			$PendingOrders = DB::table('orders')->where('status', 0)->get();
 			$Orders = [];
-			foreach($PendingOrders as $item) {
+			foreach ($PendingOrders as $item) {
 				$Product = DB::table('products')->find($item->product_id);
 				$item->product = $Product->name;
 				$Orders[] = $item;
 			}
-
 
 			return view('admin.pending_orders', [
 				'title' => 'Pending Orders',
@@ -131,7 +129,6 @@ class AdminController extends Controller
 			]);
 		}
 		return Redirect::to("login");
-
 	}
 
 	public function StoreNewProduct(Request $Req)
@@ -145,21 +142,14 @@ class AdminController extends Controller
 			$Product->price = $Req->price;
 			$Product->thumb = $thumb;
 			if ($Product->save()) {
-				// return Redirect::back()->with('message', 'Operation Successful !');
-				// return Redirect::back()->with('message', 'Operation Successful !');
-				// return redirect('add_new_product')->with('status', 'Profile updated!');
-				// $Req->session()->flash('status', 'Task was successful!');
-				// return redirect('dashboard');
 				return redirect('add_new_product');
-
-				// return Redirect::to("add_new_product")->with('status', 'Profile updated!');
 			}
 		}
 		return Redirect::to("login");
-
 	}
 
-	public function Delivered(Request $Req) {
+	public function Delivered(Request $Req)
+	{
 		if (Order::where('id', $Req->id)->update(['status' => 1])) {
 			return response()->json(['success' => true], 200);
 		}
