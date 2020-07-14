@@ -185,7 +185,7 @@ class MainController extends Controller
 			->get();
 
 		return view('users.all_products', [
-			'title' => 'Safety',
+			'title' => 'Fire',
 			'products' => $Products,
 		]);
 	}
@@ -198,7 +198,7 @@ class MainController extends Controller
 			->get();
 
 		return view('users.all_products', [
-			'title' => 'Safety',
+			'title' => 'Lab',
 			'products' => $Products,
 		]);
 	}
@@ -211,7 +211,7 @@ class MainController extends Controller
 			->get();
 
 		return view('users.all_products', [
-			'title' => 'Safety',
+			'title' => 'Electronics',
 			'products' => $Products,
 		]);
 	}
@@ -224,7 +224,7 @@ class MainController extends Controller
 			->get();
 
 		return view('users.all_products', [
-			'title' => 'Safety',
+			'title' => 'Mehanical',
 			'products' => $Products,
 		]);
 	}
@@ -237,7 +237,7 @@ class MainController extends Controller
 			->get();
 
 		return view('users.all_products', [
-			'title' => 'Safety',
+			'title' => 'Cevil',
 			'products' => $Products,
 		]);
 	}
@@ -250,7 +250,7 @@ class MainController extends Controller
 			->get();
 
 		return view('users.all_products', [
-			'title' => 'Safety',
+			'title' => 'Textile',
 			'products' => $Products,
 		]);
 	}
@@ -263,7 +263,7 @@ class MainController extends Controller
 			->get();
 
 		return view('users.all_products', [
-			'title' => 'Safety',
+			'title' => 'Islamic',
 			'products' => $Products,
 		]);
 	}
