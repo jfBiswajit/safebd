@@ -19,11 +19,13 @@ class AdminController extends Controller
 {
 	public function __construct()
 	{
-		$user = Auth::user();
-		$data = [
-			'name' => $user->name
-		];
-		View::share('data', $data);
+		if (Auth::user()) {
+			$user = Auth::user();
+			$data = [
+				'name' => $user->name
+			];
+			View::share('data', $data);
+		}
 	}
 
 	public function index(Request $request)
