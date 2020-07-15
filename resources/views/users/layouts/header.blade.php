@@ -46,7 +46,7 @@
 					<form class="form-inline">
 						<div id="top_search">
 							<input type="text" name="" id="search-box" class="font-weight-light form-control mr-2"
-								placeholder="What are you looking for?" size="28">
+								placeholder="What are you looking for?" style="width: 300px">
 							<button type="submit" class="btn btn-success sm-block">Search</button>
 						</div>
 					</form>
