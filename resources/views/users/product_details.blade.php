@@ -3,28 +3,25 @@
 	<div class="row">
 		<div class="col-lg-4">
 			<img class="p-2 m-2 bg-light border rounded img-fluid"
-				src="https://az31823.vo.msecnd.net/content/en-us/img/catalog/products/140325_multi_complex_sku3115_400.jpg"
-				alt="">
+				src="storage/{{ $product->thumb }}"
+				alt="{{ $product->name }}">
 		</div>
 		<div class="col-lg-8">
 			<div class="product_details ml-4">
 				<div class="title mb-3">
-					<h3 class="p-1">Original Product Name</h3>
-					<h3 class="text-danger p-1">৳ 50</h3>
+					<h3 class="p-1">{{ $product->name }}</h3>
+					<h3 class="text-danger p-1">৳ {{ $product->price }}</h3>
 				</div>
 				<div class="description p-1">
 					<h6>Description</h6>
-					<p class="text-muted font-weight-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa illum
-						perspiciatis ratione eos nam eveniet deleniti, harum et consequatur nisi! Lorem ipsum dolor sit, amet
-						consectetur adipisicing elit. Omnis, ducimus fugiat doloribus soluta iure in quaerat ipsum error minus quis.
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odit fugit aut incidunt, quas at neque
-						doloribus reiciendis fugiat obcaecati.</p>
+					<p class="text-muted font-weight-light">{{ $product->desc }}</p>
 				</div>
 				<div class="delivery p-1">
 					<h6>Delivery</h6>
 					<p class="text-muted font-weight-light">All Over Bangladesh</p>
 				</div>
-				<a class="btn btn-success mb-2" href="">Add To Cart</a>
+				<button href="#" class="btn btn-success add_to_cart font-weight-light" data-id="{{ $product->id }}"
+					data-name="{{ $product->name }}" data-price="{{ $product->price }}">Add To Cart</button>
 			</div>
 		</div>
 	</div>
@@ -43,58 +40,21 @@
 	</div>
 	<div class="p-4">
 		<div class="row">
+			@foreach ($recomended as $product)
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-				<div class="card-deck">
+				<a href="{{ url("product_details/{$product->id}") }}" class="text-dark text-decoration-none">
 					<div class="card">
-						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg"
-							alt="Card image cap">
+						<img class="card-img-top" src="storage/{{ $product->thumb }}" alt="{{ $product->name }}">
 						<div class="card-body">
-							<h5 class="card-title font-weight-light">Product Title</h5>
-							<h5 class="float-right text-danger"><b>৳ 50</b></h5>
-							<a href="#" class="btn btn-success">Add To Cart</a>
+							<p class="card-title text-capitalize" style="font-size: 0.9rem">{{ $product->name }}</p>
+							<h5 class="float-right text-danger" style="font-size: 0.9rem"><b>৳ 250</b></h5>
+							<button href="#" class="btn btn-success add_to_cart font-weight-light" data-id="{{ $product->id }}"
+								data-name="{{ $product->name }}" data-price="{{ $product->price }}">Add To Cart</button>
 						</div>
 					</div>
-				</div>
+				</a>
 			</div>
-			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-				<div class="card-deck">
-					<div class="card">
-						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg"
-							alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title font-weight-light">Product Title</h5>
-							<h5 class="float-right text-danger"><b>৳ 50</b></h5>
-							<a href="#" class="btn btn-success">Add To Cart</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-				<div class="card-deck">
-					<div class="card">
-						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg"
-							alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title font-weight-light">Product Title</h5>
-							<h5 class="float-right text-danger"><b>৳ 50</b></h5>
-							<a href="#" class="btn btn-success">Add To Cart</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-				<div class="card-deck">
-					<div class="card">
-						<img class="card-img-top" src="https://www.zatista.ie/sitemap/email-images/300x300.jpg"
-							alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title font-weight-light">Product Title</h5>
-							<h5 class="float-right text-danger"><b>৳ 50</b></h5>
-							<a href="#" class="btn btn-success">Add To Cart</a>
-						</div>
-					</div>
-				</div>
-			</div>
+			@endforeach
 		</div>
 	</div>
 </section>

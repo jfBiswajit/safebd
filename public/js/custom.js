@@ -12,7 +12,7 @@ $(function () {
 		},
 	});
 
-	$(".add_to_cart").click(function () {
+	$(".add_to_cart").click(function (e) {
 		const ProductID = $(this).attr("data-id");
 		const Name = $(this).attr("data-name");
 		const Price = $(this).attr("data-price");
@@ -50,5 +50,6 @@ $(function () {
 			},
 			dataType: "json",
 		});
+		e.preventDefault();
 	});
 });

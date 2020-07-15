@@ -4,10 +4,13 @@ namespace App\Http\Controllers;
 
 use app\constant\constant\Constant;
 use App\Order;
+use App\Product;
 use Illuminate\Support\Facades\View;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
+
+use function GuzzleHttp\Promise\all;
 
 class MainController extends Controller
 {
@@ -63,10 +66,19 @@ class MainController extends Controller
 		]);
 	}
 
-	public function ProductDetails()
+	public function ProductDetails($id)
 	{
+		$Product = Product::findOrFail($id);
+		$Recomended = DB::table('products')
+		->where('category', $Product->category)
+			->orderBy('id', 'desc')
+			->take(4)
+			->get();
+
 		return view('users.product_details', [
-			'title' => 'Product View'
+			'title' => "Product - $Product->name",
+			'product' => $Product,
+			'recomended' => $Recomended
 		]);
 	}
 

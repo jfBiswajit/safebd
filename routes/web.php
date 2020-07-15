@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'MainController@index');
-Route::get('/product_details', 'MainController@ProductDetails');
+Route::get('/product_details/{id}', 'MainController@ProductDetails');
 Route::get('/cart', 'MainController@Cart');
 Route::post('/add_to_cart', 'MainController@AddToCart');
 Route::get('/checkout', 'MainController@Checkout');
