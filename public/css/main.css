@@ -93,6 +93,10 @@ nav ul li a:hover {
 	}
 }
 
+.card:hover {
+	border: 1px solid #28a745;
+}
+
 @media (min-width: 576px) and (max-width: 992px) {
 	.card {
 		margin-bottom: 1.8rem!important;
