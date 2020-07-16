@@ -69,7 +69,9 @@ class MainController extends Controller
 			'lab_products' => $LabProducts,
 			'electronics' => $Electronics,
 			'latest_products' => $LatestProducts,
-			'banners' => $banners
+			'banner1' => $banners[0],
+			'banner2' => $banners[1],
+			'banner3' => $banners[2],
 		]);
 	}
 
