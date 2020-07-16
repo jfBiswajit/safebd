@@ -20,7 +20,7 @@ body {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	background-image: url(https://www.jfklibrary.org/themes/custom/jfkl/images/spinner.gif);
+	background-image: url(../icon/loader.gif);
 	background-repeat: no-repeat;
 	background-position: center;
 	margin: -100px 0 0 -100px;
@@ -111,46 +111,3 @@ nav ul li a:hover {
 			margin-bottom: 1.8rem !important;
 		}
 }
-
-
-/* @media (min-width: 576px) and (max-width: 992px) {
-	header {
-		text-align: center;
-		width: 400px;
-		margin: 0 auto;
-	}
-	.card {
-		margin-bottom: 1rem!important;
-	}
-}
-
-@media (max-width: 767px) {
-	nav .navbar-collapse ul {
-		margin: 0 !important;
-	}
-}
-
-@media (max-width: 576px) {
-	header {
-		text-align: center;
-	}
-
-	header .btn {
-		width: 100%;
-	}
-
-	#search-box {
-		margin-right: 0 !important;
-	}
-
-	#user-panel-top {
-		width: 400px;
-		margin: 0 auto;
-	}
-}
-
-@media (min-width: 992px) {
-	.card {
-		margin-bottom: 1rem !important;
-	}
-} */
