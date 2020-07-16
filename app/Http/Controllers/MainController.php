@@ -241,7 +241,7 @@ class MainController extends Controller
 		]);
 	}
 
-	public function Cevil()
+	public function civil()
 	{
 		$Products = DB::table('products')
 			->where('category', 6)
@@ -249,7 +249,7 @@ class MainController extends Controller
 			->get();
 
 		return view('users.all_products', [
-			'title' => 'Cevil',
+			'title' => 'civil',
 			'products' => $Products,
 		]);
 	}

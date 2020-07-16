@@ -1,3 +1,6 @@
+
+
+
 @include('admin.layouts.header')
 <div class="container-fluid">
 	<h1 class="mt-4 pb-4">Dashboard</h1>
