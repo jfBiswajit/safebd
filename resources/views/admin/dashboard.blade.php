@@ -13,7 +13,7 @@
 						{{ $pending_order }}</h2>
 				</div>
 				<div class="card-footer d-flex align-items-center justify-content-between">
-					<a class="small text-white stretched-link" href="{{ url('pending_orders') }}">View Details</a>
+					<a class="small text-white stretched-link" href="{{ url('admin/pending_orders') }}">View Details</a>
 					<div class="small text-white"><i class="fas fa-angle-right"></i></div>
 				</div>
 			</div>
@@ -27,7 +27,7 @@
 					</h2>
 				</div>
 				<div class="card-footer d-flex align-items-center justify-content-between">
-					<a class="small text-white stretched-link" href="{{ url('completed_orders') }}">View Details</a>
+					<a class="small text-white stretched-link" href="{{ url('admin/completed_orders') }}">View Details</a>
 					<div class="small text-white"><i class="fas fa-angle-right"></i></div>
 				</div>
 			</div>
