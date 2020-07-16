@@ -21,10 +21,10 @@
 						@foreach ($products as $key=>$item)
 						<tr>
 							<td>{{ ++$key }}</td>
-							<td><img style="width: 40px; height:40px" src="storage/{{ $item->thumb }}" alt="{{ $item->name }}"></td>
+							<td><img style="width: 80px; height:80px" src="storage/{{ $item->thumb }}" alt="{{ $item->name }}"></td>
 							<td>{{ $item->name }}</td>
 							<td>{{ $item->price }}</td>
-							<td><button class="btn btn-success btn-block" data-id="{{ $item->id }}">Edit</button>
+							<td><a href="{{ url("products/{$item->id}") }}" class="btn btn-success btn-block">Edit</a>
 							</td>
 						</tr>
 						@endforeach
