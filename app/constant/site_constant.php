@@ -7,7 +7,7 @@ class Constant {
     3 => 'lab',
     4 => 'electronics',
     5 => 'mechanical',
-    6 => 'cevil',
+    6 => 'civil',
     7 => 'textile',
     8 => 'islamic',
   );

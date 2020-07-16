@@ -27,6 +27,6 @@ Route::get('/fire', 'MainController@Fire');
 Route::get('/lab', 'MainController@Lab');
 Route::get('/electronics', 'MainController@Electronics');
 Route::get('/mechanical', 'MainController@Mechanical');
-Route::get('/cevil', 'MainController@Cevil');
+Route::get('/civil', 'MainController@Civil');
 Route::get('/textile', 'MainController@Textile');
 Route::get('/islamic', 'MainController@Islamic');

@@ -56,7 +56,7 @@
 							<ion-icon name="call-outline" style="font-size: 1.8rem" class="mr-2"></ion-icon>
 							<span class="log-reg">
 								<span><b>Hotline</b></span>
-								<span>+88 01842181614</span>
+								<span>+88 01764885269</span>
 							</span>
 							<span style="position: relative">
 								<a class="text-dark" href="{{ url('cart') }}">

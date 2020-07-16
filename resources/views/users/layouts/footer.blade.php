@@ -2,10 +2,14 @@
   	<div class="container p-4">
   		<div class="row">
   			<div class="col-md-4">
-  				<h4 class="">SafeBD.Net</h4>
-  				<p class="text-muted font-weight-light">Lorem ipsum dolor sit consectetur adipisicing elit. Cupiditate perspiciatis assumenda
-  					explicabo aut? Ut reprehenderit, sequi tempora quae voluptates magnam nobis animi praesentium fugit
-  					consequatur est</p>
+						<h6>Get to Know Us</h6>
+					<ul class="list-group font-weight-light" style="list-style-type: none">
+  					<li><a href="">About us</a></li>
+  					<li><a href="">Privacy policy</a></li>
+  					<li><a href="">Company profile</a></li>
+  					<li><a href="">All Brands</a></li>
+  		
+  				</ul>
   			</div>
   			<div class="col-md-4">
   				<h6>Site Link</h6>
@@ -21,11 +25,11 @@
   				<h6>Contact</h6>
   				<p>
   					<ion-icon name="call"></ion-icon>
-  					<span class="ml-1">+88 01842181614</span>
+  					<span class="ml-1">+88 01764885269</span>
   				</p>
   				<p>
   					<ion-icon name="mail"></ion-icon>
-  					<span class="ml-1">jfbiswajit@gmail.com</span>
+  					<span class="ml-1">md.mkamal553@gmail.com</span>
   				</p>
   			</div>
   		</div>
