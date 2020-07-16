@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Banner;
 use app\constant\constant\Constant;
 use App\Order;
 use App\Product;
@@ -57,12 +58,18 @@ class MainController extends Controller
 			->take(4)
 			->get();
 
+		$banners = DB::table('banners')
+			->orderBy('id', 'desc')
+			->take(3)
+			->get();
+
 		return view('users.index', [
 			'title' => 'Online Shopping For Health Care in Bangladesh',
 			'safety_products' => $SafetyProducts,
 			'lab_products' => $LabProducts,
 			'electronics' => $Electronics,
 			'latest_products' => $LatestProducts,
+			'banners' => $banners
 		]);
 	}
 

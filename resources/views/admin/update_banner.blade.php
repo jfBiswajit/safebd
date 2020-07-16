@@ -2,23 +2,15 @@
 <div class="container p-5">
 	<div class="border rounded">
 		<h4 class="bg-light  p-3 text-muted">Update Banner</h4>
-		<form class="p-3" method="POST" action="{{ url('add_new_product') }}" enctype="multipart/form-data">
+		<form class="p-3" method="POST" action="{{ url('admin/update_banner') }}" enctype="multipart/form-data">
 			@csrf
 			<div class="row">
 				<div class="col-md-12 form-group">
-					<label class="font-weight-bold">Banner 1</label>
-					<input type="file" class="form-control-file" required name="thumb">
-				</div>
-				<div class="col-md-12 form-group">
-					<label class="font-weight-bold">Banner - 2</label>
-					<input type="file" class="form-control-file" required name="thumb">
-				</div>
-				<div class="col-md-12 form-group">
-					<label class="font-weight-bold">Banner - 3</label>
-					<input type="file" class="form-control-file" required name="thumb">
+					<label class="font-weight-bold">Select Banner</label>
+					<input type="file" class="form-control-file" name="ban">
 				</div>
 				<div class="col-md-6 form-group">
-					<button type="submit" class="btn btn-block btn-success mt-2">Add Product</button>
+					<button type="submit" class="btn btn-block btn-success mt-2">Change Banner</button>
 				</div>
 			</div>
 		</form>

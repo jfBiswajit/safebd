@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Banner;
 use app\constant\constant\Constant;
 use App\Order;
 use App\Product;
@@ -201,6 +202,22 @@ class AdminController extends Controller
 	public function UpdateBanner(Request $Req)
 	{
 		if (Auth::check()) {
+			return view('admin.update_banner', [
+				'title' => 'Update Banner'
+			]);
+		}
+		return Redirect::to("admin/login");
+	}
+
+	public function StoreBanner(Request $Req)
+	{
+		if (Auth::check()) {
+			if ($Req->ban) {
+				$Banner = new Banner();
+				$photo = $Req->ban->store('banner', 'public');
+				$Banner->photo = $photo;
+				$Banner->save();
+			}
 			return view('admin.update_banner', [
 				'title' => 'Update Banner'
 			]);
