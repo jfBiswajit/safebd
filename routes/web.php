@@ -19,6 +19,7 @@ Route::prefix('admin')->group(function () {
   Route::get('/pending_orders', 'AdminController@PendingOrder');
   Route::get('/completed_orders', 'AdminController@CompletedOrder');
   Route::get('/add_new_product', 'AdminController@AddNewProduct');
+  Route::get('/update_banner', 'AdminController@UpdateBanner');
   Route::post('/add_new_product', 'AdminController@StoreNewProduct');
   Route::get('/products', 'AdminController@ProductList');
   Route::get('/products/{id}', 'AdminController@EditProduct');

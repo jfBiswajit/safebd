@@ -198,6 +198,16 @@ class AdminController extends Controller
 		return Redirect::to("admin/login");
 	}
 
+	public function UpdateBanner(Request $Req)
+	{
+		if (Auth::check()) {
+			return view('admin.update_banner', [
+				'title' => 'Update Banner'
+			]);
+		}
+		return Redirect::to("admin/login");
+	}
+
 	public function Delivered(Request $Req)
 	{
 		if (Order::where('id', $Req->id)->update(['status' => 1])) {

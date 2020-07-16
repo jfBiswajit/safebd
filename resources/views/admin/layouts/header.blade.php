@@ -55,9 +55,9 @@
 							Dashboard
 						</a>
 
-						<a class="nav-link" href="#">
+						<a class="nav-link" href="{{ url("admin/update_banner") }}">
 							<div class="sb-nav-link-icon"><i class="fas fa-cubes"></i></div>
-							Stocks
+							Banner
 						</a>
 
 						<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#orders"
