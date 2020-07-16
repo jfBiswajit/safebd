@@ -18,7 +18,7 @@
 
 <body class="sb-nav-fixed">
 	<nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-		<a class="navbar-brand text-light" style="text-align: center; font-weight: bold" href="{{ url('dashboard') }}">SAFEBD</a>
+		<a class="navbar-brand text-light" style="text-align: center; font-weight: bold" href="{{ url('admin/dashboard') }}">SAFEBD</a>
 		<button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i
 				class="fas fa-bars"></i></button>
 		<!-- Navbar Search-->
@@ -40,7 +40,7 @@
 					<a class="dropdown-item" href="#">Settings</a>
 					<a class="dropdown-item" href="#">Activity Log</a>
 					<div class="dropdown-divider"></div>
-					<a class="dropdown-item" href="{{ url('logout') }}">Logout</a>
+					<a class="dropdown-item" href="{{ url('admin/logout') }}">Logout</a>
 				</div>
 			</li>
 		</ul>
@@ -50,7 +50,7 @@
 			<nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
 				<div class="sb-sidenav-menu">
 					<div class="nav">
-						<a class="nav-link" href="{{ url('dashboard') }}">
+						<a class="nav-link" href="{{ url('admin/dashboard') }}">
 							<div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
 							Dashboard
 						</a>
@@ -68,8 +68,8 @@
 						</a>
 						<div class="collapse" id="orders" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
 							<nav class="sb-sidenav-menu-nested nav">
-								<a class="nav-link" href="{{ url('pending_orders') }}">Pending</a>
-								<a class="nav-link" href="{{ url('completed_orders') }}">Completed</a>
+								<a class="nav-link" href="{{ url('admin/pending_orders') }}">Pending</a>
+								<a class="nav-link" href="{{ url('admin/completed_orders') }}">Completed</a>
 							</nav>
 						</div>
 
@@ -81,8 +81,8 @@
 						</a>
 						<div class="collapse" id="products" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
 							<nav class="sb-sidenav-menu-nested nav">
-								<a class="nav-link" href="{{ url('add_new_product') }}">Add New</a>
-								<a class="nav-link" href="{{ url('products') }}">Update</a>
+								<a class="nav-link" href="{{ url('admin/add_new_product') }}">Add New</a>
+								<a class="nav-link" href="{{ url('admin/products') }}">Update</a>
 								<a class="nav-link" href="#">Delete</a>
 							</nav>
 						</div>

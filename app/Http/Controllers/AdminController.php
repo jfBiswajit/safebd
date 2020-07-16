@@ -31,7 +31,7 @@ class AdminController extends Controller
 	public function index(Request $request)
 	{
 		if (Auth::check()) {
-			return Redirect::to("dashboard");
+			return Redirect::to("admin/dashboard");
 		}
 		return view('admin.login', [
 			'title' => 'Login'
@@ -48,9 +48,9 @@ class AdminController extends Controller
 		$credentials = $request->only('email', 'password');
 		if (Auth::attempt($credentials)) {
 			// Authentication passed...
-			return redirect()->intended('dashboard');
+			return redirect()->intended('admin/dashboard');
 		}
-		return Redirect::to("login");
+		return Redirect::to("admin/login");
 	}
 
 	public function dashboard()
@@ -69,14 +69,14 @@ class AdminController extends Controller
 				'total_category' => count(Constant::$Categories),
 			]);
 		}
-		return Redirect::to("login");
+		return Redirect::to("admin/login");
 	}
 
 	public function logout()
 	{
 		Session::flush();
 		Auth::logout();
-		return Redirect('login');
+		return Redirect('admin/login');
 	}
 
 	public function PendingOrder()
@@ -95,7 +95,7 @@ class AdminController extends Controller
 				'orders' => $Orders
 			]);
 		}
-		return Redirect::to("login");
+		return Redirect::to("admin/login");
 	}
 
 	public function CompletedOrder()
@@ -116,7 +116,7 @@ class AdminController extends Controller
 
 			]);
 		}
-		return Redirect::to("login");
+		return Redirect::to("admin/login");
 	}
 
 	public function AddNewProduct()
@@ -128,7 +128,7 @@ class AdminController extends Controller
 				'categories' => $Categories
 			]);
 		}
-		return Redirect::to("login");
+		return Redirect::to("admin/login");
 	}
 
 	public function StoreNewProduct(Request $Req)
@@ -142,10 +142,10 @@ class AdminController extends Controller
 			$Product->price = $Req->price;
 			$Product->thumb = $thumb;
 			if ($Product->save()) {
-				return redirect('add_new_product');
+				return redirect('admin/add_new_product');
 			}
 		}
-		return Redirect::to("login");
+		return Redirect::to("admin/login");
 	}
 
 	public function ProductList(Request $Req)
@@ -157,7 +157,7 @@ class AdminController extends Controller
 				'products' => $products
 			]);
 		}
-		return Redirect::to("login");
+		return Redirect::to("admin/login");
 	}
 
 	public function EditProduct($id)
@@ -171,7 +171,7 @@ class AdminController extends Controller
 				'categories' => $Categories
 			]);
 		}
-		return Redirect::to("login");
+		return Redirect::to("admin/login");
 	}
 
 	public function UpdateProduct(Request $Req, $id)
@@ -192,10 +192,10 @@ class AdminController extends Controller
 			}
 
 			if ($product->save()) {
-				return redirect('products');
+				return redirect('admin/products');
 			}
 		}
-		return Redirect::to("login");
+		return Redirect::to("admin/login");
 	}
 
 	public function Delivered(Request $Req)

@@ -2,7 +2,7 @@
 <div class="container p-5">
 	<div class="border rounded">
 		<h4 class="bg-light  p-3 text-muted">Add New Product</h4>
-		<form class="p-3" method="POST" action="{{ url("products/{$product->id}") }}" enctype="multipart/form-data">
+		<form class="p-3" method="POST" action="{{ url("admin/products/{$product->id}") }}" enctype="multipart/form-data">
 			@csrf
 			<div class="row">
 				<div class="col-md-6 form-group">
