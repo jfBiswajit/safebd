@@ -148,6 +148,18 @@ class AdminController extends Controller
 		return Redirect::to("login");
 	}
 
+	public function ProductList(Request $Req)
+	{
+		if (Auth::check()) {
+			$products = Product::all();
+			return view('admin.products', [
+				'title' => 'Product List',
+				'products' => $products
+			]);
+		}
+		return Redirect::to("login");
+	}
+
 	public function Delivered(Request $Req)
 	{
 		if (Order::where('id', $Req->id)->update(['status' => 1])) {
