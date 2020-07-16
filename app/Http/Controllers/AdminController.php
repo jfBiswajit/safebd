@@ -174,6 +174,30 @@ class AdminController extends Controller
 		return Redirect::to("login");
 	}
 
+	public function UpdateProduct(Request $Req, $id)
+	{
+		if (Auth::check()) {
+			$product = Product::find($id);
+			$product->name = $Req->name;
+			$product->desc = $Req->desc;
+			$product->price = $Req->price;
+
+			if ($Req->thumb) {
+				$thumb = $Req->thumb->store('products', 'public');
+				$product->thumb = $thumb;
+			}
+
+			if ($Req->id) {
+				$product->category = $Req->id;
+			}
+
+			if ($product->save()) {
+				return redirect('products');
+			}
+		}
+		return Redirect::to("login");
+	}
+
 	public function Delivered(Request $Req)
 	{
 		if (Order::where('id', $Req->id)->update(['status' => 1])) {

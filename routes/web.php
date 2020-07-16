@@ -19,6 +19,7 @@ Route::get('/add_new_product', 'AdminController@AddNewProduct');
 Route::post('/add_new_product', 'AdminController@StoreNewProduct');
 Route::get('/products', 'AdminController@ProductList');
 Route::get('/products/{id}', 'AdminController@EditProduct');
+Route::post('/products/{id}', 'AdminController@UpdateProduct');
 Route::post('/delivered', 'AdminController@Delivered');
 
 Route::get('/safety', 'MainController@Safety');
