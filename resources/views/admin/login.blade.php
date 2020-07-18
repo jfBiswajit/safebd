@@ -8,7 +8,8 @@
 	<meta name="description" content="" />
 	<meta name="author" content="" />
 	<title>Admin Login</title>
-	<link href="css/styles.css" rel="stylesheet" />
+	<!-- <link href="css/styles.css" rel="stylesheet" /> -->
+	<link href="{{ URL::asset('css/styles.css') }}" rel="stylesheet" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous">
 	</script>
 </head>
@@ -25,7 +26,7 @@
 									<h3 class="text-center font-weight-light my-4">Login</h3>
 								</div>
 								<div class="card-body">
-									<form action="{{url('post_login')}}" method="POST">
+									<form action="{{url('admin/post_login')}}" method="POST">
 										@csrf
 										<div class="form-group">
 											<label class="small mb-1" for="inputEmailAddress">Email</label>
@@ -76,7 +77,8 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" crossorigin="anonymous">
 	</script>
-	<script src="js/scripts.js"></script>
+	<!-- <script src="js/scripts.js"></script> -->
+	<script src="{{ URL::asset('js/scripts.js') }}"></script>
 </body>
 
 </html>

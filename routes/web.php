@@ -11,7 +11,7 @@ Route::post('/thank_you', 'MainController@Thankyou');
 
 
 
-Route::prefix('admin')->group(function () {
+Route::prefix('/admin')->group(function () {
   Route::get('/login', 'AdminController@index');
   Route::post('/post_login', 'AdminController@postLogin');
   Route::get('/logout', 'AdminController@logout');
