@@ -38,7 +38,7 @@
 				<div class="col-xl-3">
 					<div class="logo">
 						<a href="{{ url('/') }}" style="text-decoration: none">
-							<h1 class="font-Galada text-success">SafeBD.Net</h1>
+							<h1 class="font-Galada text-success">safeStallBD.com</h1>
 						</a>
 					</div>
 				</div>
