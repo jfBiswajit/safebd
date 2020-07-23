@@ -4,7 +4,7 @@ body {
 		sans-serif;
 }
 
-#preloader {
+/* #preloader {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -12,9 +12,9 @@ body {
 	bottom: 0;
 	background-color: #fff;
 	z-index: 9999 !important;
-}
+} */
 
-#status {
+/* #status {
 	width: 200px;
 	height: 200px;
 	position: absolute;
@@ -24,7 +24,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	margin: -100px 0 0 -100px;
-}
+} */
 
 .font-Galada {
 	font-family: 'Galada',
