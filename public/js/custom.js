@@ -1,4 +1,3 @@
-// Start Coding Here
 $(function () {
 	$.ajaxSetup({
 		headers: {
