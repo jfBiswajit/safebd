@@ -174,6 +174,7 @@ class AdminController extends Controller
 		}
 		return Redirect::to("admin/login");
 	}
+	
 
 	public function UpdateProduct(Request $Req, $id)
 	{

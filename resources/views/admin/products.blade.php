@@ -25,6 +25,7 @@
 							<td>{{ $item->name }}</td>
 							<td>{{ $item->price }}</td>
 							<td><a href="{{ url("admin/products/{$item->id}") }}" class="btn btn-success btn-block">Edit</a>
+								
 							</td>
 						</tr>
 						@endforeach
