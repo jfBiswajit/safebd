@@ -14,7 +14,9 @@
 				</div>
 				<div class="description p-1">
 					<h6>Description</h6>
-					<p class="text-muted font-weight-light">{{ $product->desc }}</p>
+					<div class="font-weight-light" style="font-weight: 300">
+            {!! $product->desc !!}
+          </div>
 				</div>
 				<div class="delivery p-1">
 					<h6>Delivery</h6>
