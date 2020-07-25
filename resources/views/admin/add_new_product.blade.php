@@ -11,7 +11,7 @@
 				</div>
 				<div class="col-md-12 form-group">
 					<label for="">Description</label>
-          <textarea class="form-control" required name="desc" name="" id="" cols="30" rows="10"></textarea>
+          <textarea class="form-control" required name="desc" id="" cols="30" rows="10"></textarea>
 				</div>
 				<div class="col-md-6 form-group">
 					<label for="inputState">Category</label>
