@@ -5,7 +5,7 @@
 		<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 			<a href="{{ url("product_details/{$product->id}") }}" class="text-dark text-decoration-none">
 				<div class="card mb-4">
-					<img class="card-img-top" style="width: 539px;height: 404px" src="storage/{{ $product->thumb }}" alt="{{ $product->name }}">
+					<img class="card-img-top"  src="storage/{{ $product->thumb }}" alt="{{ $product->name }}">
 					<div class="card-body">
 						<p class="card-title text-capitalize" style="font-size: 0.9rem">{{ $product->name }}</p>
 						<h5 class="float-right text-danger" style="font-size: 0.9rem"><b>৳ {{ $product->price }}</b></h5>
