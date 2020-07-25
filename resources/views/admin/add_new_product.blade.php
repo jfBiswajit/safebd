@@ -5,13 +5,13 @@
 		<form class="p-3" method="POST" action="{{ url('admin/add_new_product') }}" enctype="multipart/form-data">
 			@csrf
 			<div class="row">
-				<div class="col-md-6 form-group">
+				<div class="col-md-12 form-group">
 					<label>Product Name</label>
 					<input type="text" class="form-control" required name="name">
 				</div>
-				<div class="col-md-6 form-group">
+				<div class="col-md-12 form-group">
 					<label for="">Description</label>
-					<input type="text" class="form-control" required name="desc">
+          <textarea class="form-control" required name="desc" id="" cols="30" rows="10"></textarea>
 				</div>
 				<div class="col-md-6 form-group">
 					<label for="inputState">Category</label>
@@ -37,4 +37,8 @@
 		</form>
 	</div>
 </div>
+<script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+<script>
+  CKEDITOR.replace('desc');
+</script>
 @include('admin.layouts.footer')
