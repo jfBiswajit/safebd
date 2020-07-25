@@ -35,7 +35,7 @@
   		</div>
   	</div>
   	<div class="text-center border-top p-2">
-  		<ion-icon name="logo-facebook" size="large" class="p-2 text-primary"></ion-icon>
+  		<a href="https://www.facebook.com/safestallbd/"><ion-icon name="logo-facebook" size="large" class="p-2 text-primary"></ion-icon></a>
   		<ion-icon name="logo-twitter" size="large" class="p-2 text-primary"></ion-icon>
   		<ion-icon name="logo-youtube" size="large" class="p-2 text-danger"></ion-icon>
   	</div>
