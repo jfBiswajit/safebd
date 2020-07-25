@@ -22,6 +22,8 @@
 				</div>
 				<button href="#" class="btn btn-success add_to_cart font-weight-light" data-id="{{ $product->id }}"
 					data-name="{{ $product->name }}" data-price="{{ $product->price }}">Add To Cart</button>
+					
+					
 			</div>
 		</div>
 	</div>
