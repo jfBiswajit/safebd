@@ -1,11 +1,20 @@
 @include('users.layouts.header')
-<div class="container p-5">
+<div class="container my-5">
 	<div class="row">
-		<div class="col-lg-4">
-			<img class="p-2 m-2 bg-light border rounded img-fluid" src="/storage/{{ $product->thumb }}"
-				alt="{{ $product->name }}">
+		<div class="col-md-5 exzoom" id="exzoom">
+			<div class="exzoom_img_box">
+				<ul class='exzoom_img_ul'>
+					<li><img class="img-fluid" src="/storage/{{ $product->thumb }}" />
+					</li>
+					<li><img src="/storage/{{ $product->thumb }}" />
+					</li>
+					<li><img src="/storage/{{ $product->thumb }}" />
+					</li>
+				</ul>
+			</div>
+			<div class="exzoom_nav" style="margin-top: 1rem"></div>
 		</div>
-		<div class="col-lg-8">
+		<div class="col-md-7">
 			<div class="product_details ml-4">
 				<div class="title mb-3">
 					<h3 class="p-1">{{ $product->name }}</h3>
@@ -60,3 +69,18 @@
 	</div>
 </section>
 @include('users.layouts.footer')
+
+<script>
+	$(function () {
+
+		$(function () {
+
+			$("#exzoom").exzoom({
+				"navHeight": 39,
+			});
+
+		});
+
+	});
+
+</script>

@@ -591,5 +591,5 @@
         return res;
     }
 
-// 闭包结束     
+// 闭包结束
 })(jQuery, window);
