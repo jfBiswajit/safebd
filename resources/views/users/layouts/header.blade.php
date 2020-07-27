@@ -21,6 +21,9 @@
 	{{-- Toastr Js --}}
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 
+	{{-- Exzoom --}}
+	<link rel="stylesheet" href="{{ asset('exzoom/css/jquery.exzoom.css') }}">
+
 	{{-- Custom CSS Style --}}
 	<link rel="stylesheet" href="{{ asset('css/main.css') }}">
 
@@ -52,24 +55,24 @@
 					</form>
 				</div>
 				<div class="col-xl-4">
-						<div class="d-flex" id="user_panel_top">
-							<ion-icon name="call-outline" style="font-size: 1.8rem" class="mr-2"></ion-icon>
-							<span class="log-reg">
-								<span><b>Hotline</b></span>
-								<span>+88 01764885269</span>
-							</span>
-							<span style="position: relative">
-								<a class="text-dark" href="{{ url('cart') }}">
-									<ion-icon name="cart-outline" style="font-size: 1.8rem" class="ml-4"></ion-icon>
-									<span class="cart_item_show" id="cart_val">{{ $common_data['cart'] }}</span>
-								</a>
-							</span>
-							<ion-icon name="person-outline" style="font-size: 1.8rem" class="mr-2 ml-4"></ion-icon>
-							<span class="log-reg">
-								<span><a href=""><b>Log In</b></a></span>
-								<span><a href=""><b>Register</b></a></span>
-							</span>
-						</div>
+					<div class="d-flex" id="user_panel_top">
+						<ion-icon name="call-outline" style="font-size: 1.8rem" class="mr-2"></ion-icon>
+						<span class="log-reg">
+							<span><b>Hotline</b></span>
+							<span>+88 01764885269</span>
+						</span>
+						<span style="position: relative">
+							<a class="text-dark" href="{{ url('cart') }}">
+								<ion-icon name="cart-outline" style="font-size: 1.8rem" class="ml-4"></ion-icon>
+								<span class="cart_item_show" id="cart_val">{{ $common_data['cart'] }}</span>
+							</a>
+						</span>
+						<ion-icon name="person-outline" style="font-size: 1.8rem" class="mr-2 ml-4"></ion-icon>
+						<span class="log-reg">
+							<span><a href=""><b>Log In</b></a></span>
+							<span><a href=""><b>Register</b></a></span>
+						</span>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -81,9 +84,9 @@
 			<div class="collapse navbar-collapse text-uppercase" id="navbarNavDropdown">
 				<ul class="navbar-nav w-70 mx-auto">
 					@foreach ($common_data['categories'] as $item)
-						<li class="nav-item">
-							<a class="nav-link {{ Request::is("$item") ? 'text-success' : '' }}" href="{{ url($item) }}">{{ $item }}</a>
-						</li>
+					<li class="nav-item">
+						<a class="nav-link {{ Request::is("$item") ? 'text-success' : '' }}" href="{{ url($item) }}">{{ $item }}</a>
+					</li>
 					@endforeach
 				</ul>
 			</div>
