@@ -136,12 +136,20 @@ class AdminController extends Controller
 	{
 		if (Auth::check()) {
 			$thumb = $Req->thumb->store('products', 'public');
+			$thumb_one=$Req->thumb_one->store('products','public');
+			$thumb_two=$Req->thumb_two->store('products','public');
+			$thumb_three=$Req->thumb_three->store('products','public');
+			$thumb_four=$Req->thumb_four->store('products','public');
 			$Product = new Product;
 			$Product->name = $Req->name;
 			$Product->desc = $Req->desc;
 			$Product->category = $Req->id;
 			$Product->price = $Req->price;
 			$Product->thumb = $thumb;
+			$Product->thumb_one=$thumb_one;
+			$Product->thumb_two=$thumb_two;
+			$Product->thumb_three=$thumb_three;
+			$Product->thumb_four=$thumb_four;
 			if ($Product->save()) {
 				return redirect('admin/add_new_product');
 			}

@@ -6,10 +6,18 @@
 				<ul class='exzoom_img_ul'>
 					<li><img class="img-fluid" src="/storage/{{ $product->thumb }}" />
 					</li>
-					<li><img src="/storage/{{ $product->thumb }}" />
+					<li><img src="/storage/{{ $product->thumb_one }}" />
+					</li>
+					 <li><img src="/storage/{{ $product->thumb_two}}" />
+					</li>
+					<li><img src="/storage/{{ $product->thumb_three }}" />
+					</li>
+					<li><img src="/storage/{{ $product->thumb_four}}" />
 					</li>
 					<li><img src="/storage/{{ $product->thumb }}" />
 					</li>
+					<li><img src="/storage/{{ $product->thumb }}" />
+					</li> 
 				</ul>
 			</div>
 			<div class="exzoom_nav" style="margin-top: 1rem"></div>

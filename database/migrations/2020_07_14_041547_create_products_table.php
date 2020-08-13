@@ -20,6 +20,10 @@ class CreateProductsTable extends Migration
             $table->integer('category');
             $table->integer('price');
             $table->string('thumb');
+            $table->string('thumb_one')->nullable();
+            $table->string('thumb_two')->nullable();
+            $table->string('thumb_three')->nullable();
+            $table->string('thumb_four')->nullable();
             $table->string('status')->default(1);
             $table->timestamps();
         });
