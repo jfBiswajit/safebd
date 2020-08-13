@@ -139,7 +139,7 @@
 						<img class="card-img-top" src="storage/{{ $product->thumb }}" alt="Card image cap">
 						<div class="card-body">
 							<p class="card-title text-capitalize font-weight-bold" style="font-size: 0.9rem">{{ $product->name }}</p>
-							<h5 class="float-right text-danger" style="font-size: 0.9rem"><b>৳ 250</b></h5>
+							<h5 class="float-right text-danger" style="font-size: 0.9rem"><b>৳ {{ $product->price }}</b></h5>
 							<button href="#" class="btn btn-success add_to_cart font-weight-light" data-id="{{ $product->id }}"
 								data-name="{{ $product->name }}" data-price="{{ $product->price }}">Add To Cart</button>
 						</div>
@@ -150,4 +150,133 @@
 		</div>
 	</div>
 </section>
+<section id="safety">
+	<div class="section_title p-4 bg-light clearfix">
+		<div class="float-left">
+			<h4 class="font-weight-bold text-dark">MECHANICAL</h4>
+			<p class="text-muted font-weight-light">New Arrived On SafeBD</p>
+		</div>
+		<div class="float-right">
+			<a href="{{ url('mechanical') }}" class="btn btn-outline-primary">
+				<h5>SEE ALL</h5>
+			</a>
+		</div>
+	</div>
+	<div class="p-4">
+		<div class="row">
+			@foreach ($mechanical as $product)
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<a href="{{ url("product_details/{$product->id}") }}" class="text-dark text-decoration-none">
+					<div class="card">
+						<img class="card-img-top" src="storage/{{ $product->thumb }}" alt="Card image cap">
+						<div class="card-body">
+							<p class="card-title text-capitalize font-weight-bold" style="font-size: 0.9rem">{{ $product->name }}</p>
+							<h5 class="float-right text-danger" style="font-size: 0.9rem"><b>৳ {{ $product->price }}</b></h5>
+							<button href="#" class="btn btn-success add_to_cart font-weight-light" data-id="{{ $product->id }}"
+								data-name="{{ $product->name }}" data-price="{{ $product->price }}">Add To Cart</button>
+						</div>
+					</div>
+				</a>
+			</div>
+			@endforeach
+		</div>
+	</div>
+</section>
+<section id="safety">
+	<div class="section_title p-4 bg-light clearfix">
+		<div class="float-left">
+			<h4 class="font-weight-bold text-dark">CIVIL</h4>
+			<p class="text-muted font-weight-light">New Arrived On SafeBD</p>
+		</div>
+		<div class="float-right">
+			<a href="{{ url('civil') }}" class="btn btn-outline-primary">
+				<h5>SEE ALL</h5>
+			</a>
+		</div>
+	</div>
+	<div class="p-4">
+		<div class="row">
+			@foreach ($civils as $product)
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<a href="{{ url("product_details/{$product->id}") }}" class="text-dark text-decoration-none">
+					<div class="card">
+						<img class="card-img-top" src="storage/{{ $product->thumb }}" alt="Card image cap">
+						<div class="card-body">
+							<p class="card-title text-capitalize font-weight-bold" style="font-size: 0.9rem">{{ $product->name }}</p>
+							<h5 class="float-right text-danger" style="font-size: 0.9rem"><b>৳ {{ $product->price }}</b></h5>
+							<button href="#" class="btn btn-success add_to_cart font-weight-light" data-id="{{ $product->id }}"
+								data-name="{{ $product->name }}" data-price="{{ $product->price }}">Add To Cart</button>
+						</div>
+					</div>
+				</a>
+			</div>
+			@endforeach
+		</div>
+	</div>
+</section>
+<section id="safety">
+	<div class="section_title p-4 bg-light clearfix">
+		<div class="float-left">
+			<h4 class="font-weight-bold text-dark">TEXTILE</h4>
+			<p class="text-muted font-weight-light">New Arrived On SafeBD</p>
+		</div>
+		<div class="float-right">
+			<a href="{{ url('textile') }}" class="btn btn-outline-primary">
+				<h5>SEE ALL</h5>
+			</a>
+		</div>
+	</div>
+	<div class="p-4">
+		<div class="row">
+			@foreach ($textile as $product)
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<a href="{{ url("product_details/{$product->id}") }}" class="text-dark text-decoration-none">
+					<div class="card">
+						<img class="card-img-top" src="storage/{{ $product->thumb }}" alt="Card image cap">
+						<div class="card-body">
+							<p class="card-title text-capitalize font-weight-bold" style="font-size: 0.9rem">{{ $product->name }}</p>
+							<h5 class="float-right text-danger" style="font-size: 0.9rem"><b>৳ {{ $product->price }}</b></h5>
+							<button href="#" class="btn btn-success add_to_cart font-weight-light" data-id="{{ $product->id }}"
+								data-name="{{ $product->name }}" data-price="{{ $product->price }}">Add To Cart</button>
+						</div>
+					</div>
+				</a>
+			</div>
+			@endforeach
+		</div>
+	</div>
+</section>
+<section id="safety">
+	<div class="section_title p-4 bg-light clearfix">
+		<div class="float-left">
+			<h4 class="font-weight-bold text-dark">ISLAMIC</h4>
+			<p class="text-muted font-weight-light">New Arrived On SafeBD</p>
+		</div>
+		<div class="float-right">
+			<a href="{{ url('islamic') }}" class="btn btn-outline-primary">
+				<h5>SEE ALL</h5>
+			</a>
+		</div>
+	</div>
+	<div class="p-4">
+		<div class="row">
+			@foreach ($islamic as $product)
+			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+				<a href="{{ url("product_details/{$product->id}") }}" class="text-dark text-decoration-none">
+					<div class="card">
+						<img class="card-img-top" src="storage/{{ $product->thumb }}" alt="Card image cap">
+						<div class="card-body">
+							<p class="card-title text-capitalize font-weight-bold" style="font-size: 0.9rem">{{ $product->name }}</p>
+							<h5 class="float-right text-danger" style="font-size: 0.9rem"><b>৳ {{ $product->price }}</b></h5>
+							<button href="#" class="btn btn-success add_to_cart font-weight-light" data-id="{{ $product->id }}"
+								data-name="{{ $product->name }}" data-price="{{ $product->price }}">Add To Cart</button>
+						</div>
+					</div>
+				</a>
+			</div>
+			@endforeach
+		</div>
+	</div>
+</section>
+
 @include('users.layouts.footer')

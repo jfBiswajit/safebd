@@ -39,6 +39,7 @@ class MainController extends Controller
 			->orderBy('id', 'desc')
 			->take(4)
 			->get();
+			
 
 		$SafetyProducts = DB::table('products')
 			->where('category', 1)
@@ -58,6 +59,29 @@ class MainController extends Controller
 			->take(4)
 			->get();
 
+		$Mehanicals= DB::table('products')
+				->where('category', 5)
+				->orderBy('id', 'desc')
+				->take(4)
+				->get();
+		$civils= DB::table('products')
+				->where('category', 6)
+				->orderBy('id', 'desc')
+				->take(4)
+				->get();
+
+		$textile= DB::table('products')
+				->where('category', 7)
+				->orderBy('id', 'desc')
+				->take(4)
+				->get();
+
+	$Islamic= DB::table('products')
+				->where('category', 8)
+				->orderBy('id', 'desc')
+				->take(4)
+				->get();
+
 		$banners = DB::table('banners')
 			->orderBy('id', 'desc')
 			->take(3)
@@ -68,10 +92,15 @@ class MainController extends Controller
 			'safety_products' => $SafetyProducts,
 			'lab_products' => $LabProducts,
 			'electronics' => $Electronics,
+			'mechanical' =>$Mehanicals,
+			'civils' =>$civils,
+			'textile'=>$textile,
+			'islamic' =>$Islamic,
 			'latest_products' => $LatestProducts,
 			'banner1' => $banners[0],
 			'banner2' => $banners[1],
 			'banner3' => $banners[2],
+		
 		]);
 	}
 
