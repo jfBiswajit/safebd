@@ -21,11 +21,12 @@
 						@foreach ($products as $key=>$item)
 						<tr>
 							<td>{{ ++$key }}</td>
-							<td><img style="width: 80px; height:80px" src="{{ asset("storage/" .$item->thumb) }}" alt="{{ $item->name }}"></td>
+							<td><img style="width: 80px; height:80px" src="{{ asset("storage/" .$item->thumb_one) }}"
+									alt="{{ $item->name }}"></td>
 							<td>{{ $item->name }}</td>
 							<td>{{ $item->price }}</td>
 							<td><a href="{{ url("admin/products/{$item->id}") }}" class="btn btn-success btn-block">Edit</a>
-								
+
 							</td>
 						</tr>
 						@endforeach

@@ -195,13 +195,24 @@ class AdminController extends Controller
   {
     if (Auth::check()) {
       $product = Product::find($id);
+
       $product->name = $Req->name;
       $product->desc = $Req->desc;
       $product->price = $Req->price;
 
-      if ($Req->thumb) {
-        $thumb = $Req->thumb->store('products', 'public');
-        $product->thumb = $thumb;
+      if ($Req->thumb_one) {
+        $thumb_one = $Req->thumb_one->store('products', 'public');
+        $product->thumb_one = $thumb_one;
+      }
+
+      if ($Req->thumb_two) {
+        $thumb_two = $Req->thumb_two->store('products', 'public');
+        $product->thumb_two = $thumb_two;
+      }
+
+      if ($Req->thumb_three) {
+        $thumb_three = $Req->thumb_three->store('products', 'public');
+        $product->thumb_three = $thumb_three;
       }
 
       if ($Req->id) {
