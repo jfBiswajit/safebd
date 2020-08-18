@@ -11,7 +11,7 @@
 				</div>
 				<div class="col-md-12 form-group">
 					<label for="">Description</label>
-          <textarea class="form-control" required name="desc" id="" cols="30" rows="10"></textarea>
+					<textarea class="form-control" required name="desc" id="" cols="30" rows="10"></textarea>
 				</div>
 				<div class="col-md-6 form-group">
 					<label for="inputState">Category</label>
@@ -26,25 +26,17 @@
 					<label for="">Price</label>
 					<input type="text" class="form-control" required name="price">
 				</div>
-				<div class="col-md-3 form-group">
-					<label>Thumbnail Main</label>
-					<input type="file" class="form-control-file" required name="thumb">
-				</div>
 				<div class="col-md-2 form-group">
 					<label>Thumbnail one</label>
-					<input type="file" class="form-control-file"  name="thumb_one">
+					<input type="file" class="form-control-file" name="thumb_one">
 				</div>
 				<div class="col-md-2 form-group">
 					<label>Thumbnail two</label>
-					<input type="file" class="form-control-file"  name="thumb_two">
+					<input type="file" class="form-control-file" name="thumb_two">
 				</div>
 				<div class="col-md-2 form-group">
 					<label>Thumbnail three</label>
-					<input type="file" class="form-control-file"  name="thumb_three">
-				</div>
-				<div class="col-md-3 form-group">
-					<label>Thumbnail four</label>
-					<input type="file" class="form-control-file"  name="thumb_four">
+					<input type="file" class="form-control-file" name="thumb_three">
 				</div>
 				<div class="col-md-12 form-group">
 					<button type="submit" class="btn btn-block btn-success mt-2">Add Product</button>
@@ -55,6 +47,7 @@
 </div>
 <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
 <script>
-  CKEDITOR.replace('desc');
+	CKEDITOR.replace('desc');
+
 </script>
 @include('admin.layouts.footer')
