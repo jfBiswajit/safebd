@@ -2,15 +2,15 @@
 <section class="p-4" id="main-slider">
 	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 		<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img class="d-block w-100" src="{{ asset('storage/' . $banner1->photo) }}" alt="First slide">
-				</div>
-				<div class="carousel-item">
-					<img class="d-block w-100" src="{{ asset('storage/' . $banner2->photo) }}" alt="First slide">
-				</div>
-				<div class="carousel-item">
-					<img class="d-block w-100" src="{{ asset('storage/' . $banner3->photo) }}" alt="First slide">
-				</div>
+			<div class="carousel-item active">
+				<img class="d-block w-100" src="{{ asset('storage/' . $banner1->photo) }}" alt="First slide">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="{{ asset('storage/' . $banner2->photo) }}" alt="First slide">
+			</div>
+			<div class="carousel-item">
+				<img class="d-block w-100" src="{{ asset('storage/' . $banner3->photo) }}" alt="First slide">
+			</div>
 		</div>
 		<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -40,7 +40,7 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<a href="{{ url("product_details/{$product->id}") }}" class="text-dark text-decoration-none">
 					<div class="card">
-						<img class="card-img-top" src="storage/{{ $product->thumb }}" alt="Card image cap">
+						<img class="card-img-top" src="storage/{{ $product->thumb_one }}" alt="Card image cap">
 						<div class="card-body">
 							<p class="card-title text-capitalize font-weight-bold" style="font-size: 0.9rem">{{ $product->name }}</p>
 							<h5 class="float-right text-danger" style="font-size: 0.9rem"><b>৳ {{ $product->price }}</b></h5>
@@ -72,7 +72,7 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<a href="{{ url("product_details/{$product->id}") }}" class="text-dark text-decoration-none">
 					<div class="card">
-						<img class="card-img-top" src="storage/{{ $product->thumb }}" alt="Card image cap">
+						<img class="card-img-top" src="storage/{{ $product->thumb_one }}" alt="Card image cap">
 						<div class="card-body">
 							<p class="card-title text-capitalize font-weight-bold" style="font-size: 0.9rem">{{ $product->name }}</p>
 							<h5 class="float-right text-danger" style="font-size: 0.9rem"><b>৳ {{ $product->price }}</b></h5>
@@ -104,7 +104,7 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<a href="{{ url("product_details/{$product->id}") }}" class="text-dark text-decoration-none">
 					<div class="card">
-						<img class="card-img-top" src="storage/{{ $product->thumb }}" alt="Card image cap">
+						<img class="card-img-top" src="storage/{{ $product->thumb_one }}" alt="Card image cap">
 						<div class="card-body">
 							<p class="card-title text-capitalize font-weight-bold" style="font-size: 0.9rem">{{ $product->name }}</p>
 							<h5 class="float-right text-danger" style="font-size: 0.9rem"><b>৳ {{ $product->price }}</b></h5>
@@ -136,7 +136,7 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<a href="{{ url("product_details/{$product->id}") }}" class="text-dark text-decoration-none">
 					<div class="card">
-						<img class="card-img-top" src="storage/{{ $product->thumb }}" alt="Card image cap">
+						<img class="card-img-top" src="storage/{{ $product->thumb_one }}" alt="Card image cap">
 						<div class="card-body">
 							<p class="card-title text-capitalize font-weight-bold" style="font-size: 0.9rem">{{ $product->name }}</p>
 							<h5 class="float-right text-danger" style="font-size: 0.9rem"><b>৳ {{ $product->price }}</b></h5>
@@ -168,7 +168,7 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<a href="{{ url("product_details/{$product->id}") }}" class="text-dark text-decoration-none">
 					<div class="card">
-						<img class="card-img-top" src="storage/{{ $product->thumb }}" alt="Card image cap">
+						<img class="card-img-top" src="storage/{{ $product->thumb_one }}" alt="Card image cap">
 						<div class="card-body">
 							<p class="card-title text-capitalize font-weight-bold" style="font-size: 0.9rem">{{ $product->name }}</p>
 							<h5 class="float-right text-danger" style="font-size: 0.9rem"><b>৳ {{ $product->price }}</b></h5>
@@ -200,7 +200,7 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<a href="{{ url("product_details/{$product->id}") }}" class="text-dark text-decoration-none">
 					<div class="card">
-						<img class="card-img-top" src="storage/{{ $product->thumb }}" alt="Card image cap">
+						<img class="card-img-top" src="storage/{{ $product->thumb_one }}" alt="Card image cap">
 						<div class="card-body">
 							<p class="card-title text-capitalize font-weight-bold" style="font-size: 0.9rem">{{ $product->name }}</p>
 							<h5 class="float-right text-danger" style="font-size: 0.9rem"><b>৳ {{ $product->price }}</b></h5>
@@ -232,7 +232,7 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<a href="{{ url("product_details/{$product->id}") }}" class="text-dark text-decoration-none">
 					<div class="card">
-						<img class="card-img-top" src="storage/{{ $product->thumb }}" alt="Card image cap">
+						<img class="card-img-top" src="storage/{{ $product->thumb_one }}" alt="Card image cap">
 						<div class="card-body">
 							<p class="card-title text-capitalize font-weight-bold" style="font-size: 0.9rem">{{ $product->name }}</p>
 							<h5 class="float-right text-danger" style="font-size: 0.9rem"><b>৳ {{ $product->price }}</b></h5>
@@ -264,7 +264,7 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<a href="{{ url("product_details/{$product->id}") }}" class="text-dark text-decoration-none">
 					<div class="card">
-						<img class="card-img-top" src="storage/{{ $product->thumb }}" alt="Card image cap">
+						<img class="card-img-top" src="storage/{{ $product->thumb_one }}" alt="Card image cap">
 						<div class="card-body">
 							<p class="card-title text-capitalize font-weight-bold" style="font-size: 0.9rem">{{ $product->name }}</p>
 							<h5 class="float-right text-danger" style="font-size: 0.9rem"><b>৳ {{ $product->price }}</b></h5>
