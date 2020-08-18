@@ -38,10 +38,10 @@
 					<label>Thumbnail three</label>
 					<input type="file" class="form-control-file" name="thumb_three">
 				</div>
-				<div class="col-md-6 form-group">
-					<button type="submit" type="submit" class="btn btn-block btn-success mt-2 text-light">Add
-						Product</button>
-				</div>
+			</div>
+			<div class="form-group">
+				<button type="submit" type="submit" class="btn btn-block btn-success mt-2 text-light">Add
+					Product</button>
 			</div>
 		</form>
 	</div>
