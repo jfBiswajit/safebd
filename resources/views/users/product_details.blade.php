@@ -1,26 +1,25 @@
 @include('users.layouts.header')
 <div class="container my-5">
 	<div class="row">
-		<div class="col-md-5 exzoom" id="exzoom">
-			<div class="exzoom_img_box">
-				<ul class='exzoom_img_ul'>
-					<li><img class="img-fluid" src="/storage/{{ $product->thumb }}" />
-					</li>
-					<li><img src="/storage/{{ $product->thumb_one }}" />
-					</li>
-					 <li><img src="/storage/{{ $product->thumb_two}}" />
-					</li>
-					<li><img src="/storage/{{ $product->thumb_three }}" />
-					</li>
-					<li><img src="/storage/{{ $product->thumb_four}}" />
-					</li>
-					<li><img src="/storage/{{ $product->thumb }}" />
-					</li>
-					<li><img src="/storage/{{ $product->thumb }}" />
-					</li> 
-				</ul>
+		<div class="col-md-5">
+			<div class="exzoom" id="exzoom">
+				<div class="exzoom_img_box">
+					<ul class='exzoom_img_ul'>
+						<li><img src="/storage/{{ $product->thumb_one }}" />
+						</li>
+						<li><img src="/storage/{{ $product->thumb_two }}" />
+						</li>
+						<li><img src="/storage/{{ $product->thumb_three }}" />
+						</li>
+					</ul>
+				</div>
+				<div class="exzoom_nav"></div>
+				<p class="exzoom_btn">
+					<a href="javascript:void(0);" class="exzoom_prev_btn">
+						< </a> <a href="javascript:void(0);" class="exzoom_next_btn"> >
+					</a>
+				</p>
 			</div>
-			<div class="exzoom_nav" style="margin-top: 1rem"></div>
 		</div>
 		<div class="col-md-7">
 			<div class="product_details ml-4">
@@ -62,7 +61,7 @@
 			<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
 				<a href="{{ url("product_details/{$product->id}") }}" class="text-dark text-decoration-none">
 					<div class="card">
-						<img class="card-img-top" src="/storage/{{ $product->thumb }}" alt="{{ $product->name }}">
+						<img class="card-img-top" src="/storage/{{ $product->thumb_one }}" alt="{{ $product->name }}">
 						<div class="card-body">
 							<p class="card-title text-capitalize font-weight-bold" style="font-size: 0.9rem">{{ $product->name }}</p>
 							<h5 class="float-right text-danger" style="font-size: 0.9rem"><b>{{ $product->price }}</b></h5>
@@ -81,14 +80,15 @@
 <script>
 	$(function () {
 
-		$(function () {
-
-			$("#exzoom").exzoom({
-				"navHeight": 39,
-			});
-
+		$("#exzoom").exzoom({
+			"navWidth": 60,
+			"navHeight": 60,
+			"navItemNum": 3,
+			"navItemMargin": 7,
+			"navBorder": 1,
+			"autoPlay": true,
+			"autoPlayTimeout": 2000
 		});
-
 	});
 
 </script>
